@@ -1,0 +1,514 @@
+/* ------------------------- header-style ---------------------------- */
+.header {
+    position: relative;
+
+    .header_top_wrapper {
+        width: 100%;
+        height: 50px;
+        background-color: #052f48;
+
+        .header_box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+            height: 100%;
+            @include max-width;
+
+            .header_time {
+                p {
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 1.4rem;
+
+                    i {
+                        color: $Primary;
+                    }
+                }
+            }
+
+            .header_icon {
+                ul {
+                    display: flex;
+                    gap: 5px;
+
+                    li {
+                        width: 50px;
+                        height: 50px;
+                        background-color: $Primary;
+                        @include d-flex;
+
+                        i {
+                            font-size: 1.6rem;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header_nav_wrapper {
+        background-color: $white;
+        width: 100%;
+        height: 80px;
+
+        .navbar {
+            @include max-width;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            .logo a{
+                font-size: 2.7rem;
+                font-weight: 700;
+                color: #000;
+                text-transform: uppercase;
+                span{
+                    color: #4f86f9;
+                }
+            }
+
+            .nav-menu {
+                display: flex;
+                gap: 50px;
+
+                a {
+                    font-size: 1.6rem;
+                    color: #000000cc;
+                    transition: all 0.3s ease;
+
+                    &:hover,
+                    &.active {
+                        color: $Primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------- /header-style ---------------------------- */
+
+/* ------------------------- Contact-hero-style ---------------------------- */
+.contact_hero {
+    position: relative;
+    background: url(/image/bg_3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    min-height: auto;
+    height: 450px;
+    background-position: center center;
+    background-attachment: fixed;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        background: #052f48;
+    }
+
+    .contact_hero_container {
+        position: relative;
+        z-index: 10000;
+        top: 100px;
+        @include max-width;
+
+        .contact_hero_wrapper {
+            position: relative;
+            z-index: 10000;
+            min-height: auto;
+            height: 500px;
+
+            .contact-hero-box {
+                @include d-flex;
+                flex-direction: column;
+                height: 100%;
+
+                ul {
+                    display: flex;
+                    gap: 10px;
+
+                    li {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        color: #ffffffcc;
+                    }
+
+                    a {
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        color: #ffffffcc;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            color: $Primary;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 7rem;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------- /Contact-hero-style ---------------------------- */
+
+/* ------------------------- ContactUs-style ---------------------------- */
+.contactUs {
+    width: 100%;
+    height: auto;
+    padding: 0px 30px;
+    padding-top: 80px;
+    background-color: #f4f6ff;
+
+    .contactUs-box {
+        @include max-width2;
+        padding: 50px;
+        background-color: $white;
+
+        .contactUs-title {
+            h3 {
+                font-size: 3rem;
+                font-weight: 400;
+                color: #000;
+                padding-bottom: 10px;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+        }
+
+        .contactUs-info {
+            padding-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+
+            .contactUs-items {
+                h4 {
+                    font-size: 1.5rem;
+                    color: #000;
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+
+                .contact-para {
+                    color: $Primary;
+                }
+            }
+        }
+
+        .contactUs-form {
+            form {
+                .contactBox-50 {
+                    display: flex;
+                    gap: 30px;
+                    padding-top: 20px;
+
+                    input {
+                        width: 100%;
+                        padding: 12px 12px;
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                        outline-color: $Primary;
+                    }
+                }
+
+                .contactBox-100 {
+                    padding-top: 30px;
+
+                    textarea {
+                        width: 100%;
+                        padding: 15px 15px;
+                        border: 1px solid rgba(0, 0, 0, 0.1);
+                        outline-color: $Primary;
+                        resize: none;
+                    }
+                }
+
+                .contactUs-btn {
+                    margin-top: 30px;
+                    padding: 15px 28px;
+                    background-color: $Primary;
+                    border: none;
+                    color: $white;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------- /ContactUs-style ---------------------------- */
+
+/* ------------------------- Map-style ---------------------------- */
+.map {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    background-color: #f4f6ff;
+
+    .map-container {
+        max-width: 1200px;
+        margin: auto;
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: 400px;
+            outline: none;
+        }
+    }
+}
+
+/* ------------------------- /Map-style ---------------------------- */
+
+/* ------------------------- Prepare-style ---------------------------- */
+.Prepare {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url(/image/bg_3.jpg);
+    background-position: center;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        opacity: .8;
+        background: #4f86f9;
+        top: 0;
+        bottom: 0;
+    }
+
+    .Prepare-container {
+        @include max-width2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding: 80px 30px;
+        position: relative;
+        z-index: 1000;
+
+        .prepareLeft {
+            h4 {
+                font-size: 1.4rem;
+                letter-spacing: 1px;
+                color: #f4f6ff;
+                padding-bottom: 5px;
+            }
+
+            p {
+                font-size: 3rem;
+                font-weight: 600;
+                color: #f4f6ff;
+            }
+        }
+
+        .prepareRight {
+            justify-self: center;
+
+            .prepare-btn {
+                padding: 15px 35px;
+                color: $Primary;
+                font-size: 1.5rem;
+                font-weight: 600;
+                background-color: #ffff;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+/* ------------------------- /Prepare-style ---------------------------- */
+
+/* ------------------------- Footer-style ---------------------------- */
+.footer{
+    width: 100%;
+    height: auto;
+    .footer-top{
+        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(/image/bg_1.jpg);
+        background-position: center;
+        width: 100%;
+        height: 500px;
+        .footer-top-wrapper{
+            @include max-width;
+            padding: 100px 30px;
+            display: grid;
+            grid-template-columns: 2fr 2.5fr 2fr 2fr;
+            gap: 30px;
+            .footer-about{
+                .footer-logo{
+                    padding-bottom: 20px;
+                    a{
+                        font-size: 2.5rem;
+                        color: #f4f6ff;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        small{
+                            font-size: 2.5rem;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            color: $white;
+                            color: #4f86f9;
+                        }
+                        span{
+                            display: block;
+                            font-size: 10px;
+                            font-weight: 500;
+                            padding: 0;
+                            color: #a6a6a6;
+                        }
+                    }
+                }
+                .footer-content{
+                    p{
+                        font-size: 1.6rem;
+                        color: #ffffffe6;
+                    }
+                    .foot-icons{
+                        padding-top: 20px;
+                        ul{
+                            display: flex;
+                            gap: 10px;
+                            li{
+                                width: 35px;
+                                height: 35px;
+                                background-color: $Primary;
+                                color: #f4f6ff;
+                                @include d-flex;
+                                border-radius: 10px;
+                                i{
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-service{
+                .footer-title{
+                    h3{
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        color: #f4f6ff;
+                    }
+                }
+                .foot-service-links{
+                    padding-top: 40px;
+                    display: flex;
+                    gap: 40px;
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        a{
+                            font-size: 1.5rem;
+                            font-weight: 400;
+                            color: #ffffffcc;
+                            letter-spacing: 0.5px;
+                            transition: 0.5s ease;
+                            &:hover{
+                                color: #4f86f9;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-post{
+                .footer-title{
+                    h3{
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        color: #f4f6ff;
+                    }
+                }
+                ul{
+                    display: grid;
+                    grid-template-columns: 20px 1fr;
+                    column-gap: 45px;
+                    row-gap: 30px;
+                    padding-top: 40px;
+                    span{
+                        img{
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                    li{
+                        div{
+                            font-size: 1.2rem;
+                            color: #ffffffcc;
+                        }
+                        p{
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                            color: $white;
+                            font-size: 1.5rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            .footer-info{
+                .footer-title{
+                    h3{
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        color: #f4f6ff;
+                    }
+                }
+                ul{
+                    padding-top: 40px;
+                    display: grid;
+                    grid-template-columns: 20px 1fr;
+                    gap: 20px;
+                    span{
+                        font-size: 1.6rem;
+                        color: $white;
+                    }
+                    li{
+                        font-size: 1.4rem;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        width: 100%;
+        height: 80px;
+        background-color: #052f48;
+        .footer-bottom-container{
+            @include d-flex;
+            height: 100%;
+            p{
+                font-size: 1.4rem;
+                color: #f4f6ff;
+                i{
+                    color: red;
+                }
+            }
+        }
+    }
+}
+/* ------------------------- /Footer-style ---------------------------- */
