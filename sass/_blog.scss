@@ -1,61 +1,73 @@
 /* ---------------------  BlogContent ------------------------- */
-.BlogContent{
+.BlogContent {
     width: 100%;
     height: auto;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     background: #f9faff;
-    .Blog-container{
+
+    .Blog-container {
         @include max-width;
         display: grid;
-        grid-template-columns: 3fr 1fr;
-        gap: 30px;
-        .BlogContent{
-            .BlogContent-items{
+        grid-template-columns: 2.5fr 1fr;
+        gap: 50px;
+
+        .BlogContent {
+            .BlogContent-items {
                 margin-bottom: 30px;
                 background-color: $white;
                 display: grid;
-                grid-template-columns: repeat(2,1fr);
+                grid-template-columns: repeat(2, 1fr);
                 gap: 30px;
-                .Blog-img{
-                    img{
+
+                .Blog-img {
+                    img {
                         width: 100%;
                         height: 100%;
                     }
                 }
-                .Blog-info{
+
+                .Blog-info {
                     padding: 30px 30px 30px 0;
-                    .blog-box{
+
+                    .blog-box {
                         padding-bottom: 20px;
-                        ul{
+
+                        ul {
                             display: flex;
                             gap: 20px;
-                            li{
+
+                            li {
                                 font-size: 1.2rem;
                                 font-weight: 500;
                                 color: #8c8c8c;
-                                i{
+
+                                i {
                                     color: $Primary;
                                 }
                             }
-                            li:nth-child(3){
+
+                            li:nth-child(3) {
                                 font-weight: 500;
                                 color: $Primary;
                             }
                         }
                     }
-                    h3{
+
+                    h3 {
                         font-size: 1.8rem;
                         font-weight: 600;
                         color: #000;
                         padding-bottom: 20px;
                     }
-                    p{
+
+                    p {
                         font-size: 1.6rem;
                         color: #8c8c8c;
                         padding-bottom: 40px;
                     }
-                    .blog-btn{
+
+                    .blog-btn {
                         padding: 12px 20px;
                         color: $white;
                         font-size: 1.6rem;
@@ -63,42 +75,50 @@
                         background-color: $Primary;
                         border-radius: 5px;
                         transition: 0.5s;
-                        &:hover{
-                            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+                        &:hover {
+                            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
                         }
                     }
                 }
             }
-            .blog-pagination{
+
+            .blog-pagination {
                 padding-top: 20px;
                 justify-self: center;
-                ul{
+
+                ul {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     flex-wrap: wrap;
                     gap: 5px;
-                    li{
-                        border: 1px solid rgba(0,0,0,0.3);
+
+                    li {
+                        border: 1px solid rgba(0, 0, 0, 0.3);
                         transition: 0.4s;
-                        a{
+
+                        a {
                             font-size: 1.4rem;
                             display: grid;
                             place-items: center;
                             color: $white;
                             color: #000;
                             transition: 0.4s ease;
-                            width: 50px;
-                            height: 50px;
-                            &:hover{
+                            width: 40px;
+                            height: 40px;
+
+                            &:hover {
                                 color: $white;
                                 background-color: $Primary;
                             }
-                            &.active{
+
+                            &.active {
                                 color: $white;
                                 background-color: $Primary;
                             }
-                            i{
+
+                            i {
                                 font-size: 1.6rem;
                             }
 
@@ -107,6 +127,152 @@
                 }
             }
         }
+
+        .BlogAside {
+            padding-top: 50px;
+
+            .blog-Search {
+                padding-bottom: 40px;
+                form{
+                    display: flex;
+                    padding: 10px;
+                    background-color: #f4f6ff;
+                    input{
+                        width: 100%;
+                        padding: 15px;
+                        border: none;
+                        outline: none;
+                    }
+                    .recent-btn{
+                        padding: 15px;
+                        border: none;
+                        color: #4f86f9;
+                        background-color: $white;
+                    }
+                }
+
+            }
+
+            .blog-service {
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    color: #000;
+                    padding-bottom: 40px;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    li {
+                        font-size: 1.6rem;
+                        color: #111;
+                        cursor: pointer;
+
+                        i {
+                            margin-right: 10px;
+                            color: $Primary;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+
+            .blog-recent{
+                padding-top: 40px;
+                h3{
+                    font-size: 2rem;
+                    font-weight: 500;
+                    color: #000;
+                    padding-bottom: 40px;
+                }
+                .blog-container{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .blog-recent-box{
+                        display: grid;
+                        grid-template-columns: 80px 1fr;
+                        gap: 10px;
+                        .blog-recent-left{
+                            img{
+                                width: 70px;
+                                height: 70px;
+                            }
+                        }
+                        .blog-recent-right{
+                            .blog-recent-items{
+                                h4{
+                                    font-size: 1.8rem;
+                                    font-weight: 400;
+                                    color: #111;
+                                    padding-bottom: 5px;
+                                    transition: 0.5s;
+                                    &:hover{
+                                        color: #4f86f9;
+                                    }
+                                }
+                                ul{
+                                    display: flex;
+                                    gap: 10px;
+                                    li{
+                                        color: #4f86f9;
+                                        font-size: 1.2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .blog-tab {
+                padding-top: 40px;
+
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    color: #000;
+                    padding-bottom: 20px;
+                }
+
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    padding-bottom: 10px;
+
+                    li {
+                        text-transform: uppercase;
+                        display: inline-block;
+                        padding: 4px 10px;
+                        margin-bottom: 7px;
+                        margin-right: 4px;
+                        border-radius: 4px;
+                        color: #4f86f9;
+                        font-weight: 500;
+                        font-size: 12px;
+                        background: #e3ecfe;
+                    }
+                }
+            }
+            .blog-paragraph {
+                padding-top: 30px;
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    color: #000;
+                    padding-bottom: 20px;
+                }
+                p{
+                    font-size: 1.5rem;
+                    line-height: 1.8;
+                }
+            }
+        }
     }
 }
+
 /* ---------------------  /BlogContent ------------------------- */

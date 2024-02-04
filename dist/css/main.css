@@ -30,7 +30,7 @@ a {
   width: 100%;
   height: auto;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   background: #f9faff;
 }
 .BlogContent .Blog-container {
@@ -38,8 +38,8 @@ a {
   margin: auto;
   padding: 0 30px;
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 30px;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 50px;
 }
 .BlogContent .Blog-container .BlogContent .BlogContent-items {
   margin-bottom: 30px;
@@ -124,8 +124,8 @@ a {
   color: #ffffff;
   color: #000;
   transition: 0.4s ease;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 .BlogContent .Blog-container .BlogContent .blog-pagination ul li a:hover {
   color: #ffffff;
@@ -137,6 +137,139 @@ a {
 }
 .BlogContent .Blog-container .BlogContent .blog-pagination ul li a i {
   font-size: 1.6rem;
+}
+.BlogContent .Blog-container .BlogAside {
+  padding-top: 50px;
+}
+.BlogContent .Blog-container .BlogAside .blog-Search {
+  padding-bottom: 40px;
+}
+.BlogContent .Blog-container .BlogAside .blog-Search form {
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  background-color: #f4f6ff;
+}
+.BlogContent .Blog-container .BlogAside .blog-Search form input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+}
+.BlogContent .Blog-container .BlogAside .blog-Search form .recent-btn {
+  padding: 15px;
+  border: none;
+  color: #4f86f9;
+  background-color: #ffffff;
+}
+.BlogContent .Blog-container .BlogAside .blog-service h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+  padding-bottom: 40px;
+}
+.BlogContent .Blog-container .BlogAside .blog-service ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 20px;
+}
+.BlogContent .Blog-container .BlogAside .blog-service ul li {
+  font-size: 1.6rem;
+  color: #111;
+  cursor: pointer;
+}
+.BlogContent .Blog-container .BlogAside .blog-service ul li i {
+  margin-right: 10px;
+  color: #4f86f9;
+  font-size: 1.2rem;
+}
+.BlogContent .Blog-container .BlogAside .blog-recent {
+  padding-top: 40px;
+}
+.BlogContent .Blog-container .BlogAside .blog-recent h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+  padding-bottom: 40px;
+}
+.BlogContent .Blog-container .BlogAside .blog-recent .blog-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 20px;
+}
+.BlogContent .Blog-container .BlogAside .blog-recent .blog-container .blog-recent-box {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 10px;
+}
+.BlogContent .Blog-container .BlogAside .blog-recent .blog-container .blog-recent-box .blog-recent-left img {
+  width: 70px;
+  height: 70px;
+}
+.BlogContent .Blog-container .BlogAside .blog-recent .blog-container .blog-recent-box .blog-recent-right .blog-recent-items h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #111;
+  padding-bottom: 5px;
+  transition: 0.5s;
+}
+.BlogContent .Blog-container .BlogAside .blog-recent .blog-container .blog-recent-box .blog-recent-right .blog-recent-items h4:hover {
+  color: #4f86f9;
+}
+.BlogContent .Blog-container .BlogAside .blog-recent .blog-container .blog-recent-box .blog-recent-right .blog-recent-items ul {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.BlogContent .Blog-container .BlogAside .blog-recent .blog-container .blog-recent-box .blog-recent-right .blog-recent-items ul li {
+  color: #4f86f9;
+  font-size: 1.2rem;
+}
+.BlogContent .Blog-container .BlogAside .blog-tab {
+  padding-top: 40px;
+}
+.BlogContent .Blog-container .BlogAside .blog-tab h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+  padding-bottom: 20px;
+}
+.BlogContent .Blog-container .BlogAside .blog-tab ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+.BlogContent .Blog-container .BlogAside .blog-tab ul li {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 7px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #4f86f9;
+  font-weight: 500;
+  font-size: 12px;
+  background: #e3ecfe;
+}
+.BlogContent .Blog-container .BlogAside .blog-paragraph {
+  padding-top: 30px;
+}
+.BlogContent .Blog-container .BlogAside .blog-paragraph h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+  padding-bottom: 20px;
+}
+.BlogContent .Blog-container .BlogAside .blog-paragraph p {
+  font-size: 1.5rem;
+  line-height: 1.8;
 }
 
 /* ---------------------  /BlogContent ------------------------- */
@@ -725,6 +858,7 @@ a {
   .BlogContent .Blog-container {
     grid-template-columns: 1fr;
     padding: 0 20px;
+    gap: 0;
   }
   .BlogContent .Blog-container .BlogContent .BlogContent-items {
     margin-bottom: 30px;
@@ -733,6 +867,9 @@ a {
   }
   .BlogContent .Blog-container .BlogContent .BlogContent-items .Blog-info {
     padding: 30px;
+  }
+  .BlogContent .Blog-container .BlogAside {
+    padding-top: 10px;
   }
   .contact_hero .contact_hero_container .contact_hero_wrapper .contact-hero-box p {
     font-size: 5rem;
@@ -822,6 +959,36 @@ a {
   .BlogContent .Blog-container .BlogContent .BlogContent-items .Blog-info .blog-btn {
     padding: 12px 20px;
     font-size: 1.6rem;
+  }
+  .BlogContent .Blog-container .BlogAside {
+    padding-top: 10px;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-service h3 {
+    font-size: 1.8rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-service ul li {
+    font-size: 1.4rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-service ul li i {
+    font-size: 1.2rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-recent h3 {
+    font-size: 1.8rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-recent .blog-container .blog-recent-box .blog-recent-right .blog-recent-items h4 {
+    font-size: 1.6rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-recent .blog-container .blog-recent-box .blog-recent-right .blog-recent-items ul li {
+    font-size: 1.2rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-tab h3 {
+    font-size: 1.8rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-paragraph h3 {
+    font-size: 1.8rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-paragraph p {
+    line-height: 1.6;
   }
   .contact_hero .contact_hero_container .contact_hero_wrapper .contact-hero-box p {
     font-size: 4rem;
@@ -951,7 +1118,7 @@ a {
     margin-bottom: 30px;
   }
   .BlogContent .Blog-container .BlogContent .BlogContent-items .Blog-info {
-    padding: 20px;
+    padding: 30px;
   }
   .BlogContent .Blog-container .BlogContent .BlogContent-items .Blog-info h3 {
     font-size: 1.4rem;
@@ -964,8 +1131,39 @@ a {
     font-size: 1.4rem;
   }
   .BlogContent .Blog-container .BlogContent .blog-pagination ul li a {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+  }
+  .BlogContent .Blog-container .BlogAside {
+    padding-top: 10px;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-service h3 {
+    font-size: 1.6rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-service ul li {
+    font-size: 1.4rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-service ul li i {
+    font-size: 1.2rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-recent h3 {
+    font-size: 1.8rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-recent .blog-container .blog-recent-box .blog-recent-right .blog-recent-items h4 {
+    font-size: 1.4rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-recent .blog-container .blog-recent-box .blog-recent-right .blog-recent-items ul li {
+    font-size: 1.2rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-tab h3 {
+    font-size: 1.6rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-paragraph h3 {
+    font-size: 1.6rem;
+  }
+  .BlogContent .Blog-container .BlogAside .blog-paragraph p {
+    line-height: 1.6;
     font-size: 1.2rem;
   }
   .contact_hero .contact_hero_container .contact_hero_wrapper .contact-hero-box ul li {
