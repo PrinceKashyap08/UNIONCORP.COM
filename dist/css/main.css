@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -605,7 +606,7 @@ a {
     padding: 0 12px;
   }
   .header .header_nav_wrapper .navbar .logo a {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .header .header_nav_wrapper .navbar .nav-menu {
     gap: 20px;
@@ -613,6 +614,9 @@ a {
   }
   .header .header_nav_wrapper .navbar .nav-menu a {
     font-size: 1.2rem;
+  }
+  .header .header_nav_wrapper .navbar .hamburger .line {
+    width: 30px;
   }
   .contact_hero .contact_hero_container .contact_hero_wrapper .contact-hero-box ul li {
     font-size: 1.2rem;
