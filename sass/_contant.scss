@@ -364,7 +364,7 @@
             @include max-width;
             padding: 100px 30px;
             display: grid;
-            grid-template-columns: 2fr 2.5fr 2fr 2fr;
+            grid-template-columns: 1fr 0.8fr 0.8fr 1fr 1fr;
             gap: 30px;
             .footer-about{
                 .footer-logo{
@@ -444,6 +444,24 @@
                     }
                 }
             }
+            .footer-Link{
+                ul{
+                    padding-top: 65px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    a{
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        color: #ffffffcc;
+                        letter-spacing: 0.5px;
+                        transition: 0.5s ease;
+                        &:hover{
+                            color: #4f86f9;
+                        }
+                    }
+                }
+            }
             .footer-post{
                 .footer-title{
                     h3{
@@ -514,6 +532,7 @@
             p{
                 font-size: 1.4rem;
                 color: #f4f6ff;
+                text-align: center;
                 i{
                     color: red;
                 }

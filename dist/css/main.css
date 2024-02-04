@@ -366,7 +366,7 @@ a {
   padding: 0 30px;
   padding: 100px 30px;
   display: grid;
-  grid-template-columns: 2fr 2.5fr 2fr 2fr;
+  grid-template-columns: 1fr 0.8fr 0.8fr 1fr 1fr;
   gap: 30px;
 }
 .footer .footer-top .footer-top-wrapper .footer-about .footer-logo {
@@ -448,6 +448,24 @@ a {
 .footer .footer-top .footer-top-wrapper .footer-service .foot-service-links ul a:hover {
   color: #4f86f9;
 }
+.footer .footer-top .footer-top-wrapper .footer-Link ul {
+  padding-top: 65px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 10px;
+}
+.footer .footer-top .footer-top-wrapper .footer-Link ul a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.5px;
+  transition: 0.5s ease;
+}
+.footer .footer-top .footer-top-wrapper .footer-Link ul a:hover {
+  color: #4f86f9;
+}
 .footer .footer-top .footer-top-wrapper .footer-post .footer-title h3 {
   font-size: 1.8rem;
   font-weight: 600;
@@ -512,6 +530,7 @@ a {
 .footer .footer-bottom .footer-bottom-container p {
   font-size: 1.4rem;
   color: #f4f6ff;
+  text-align: center;
 }
 .footer .footer-bottom .footer-bottom-container p i {
   color: red;
@@ -563,6 +582,14 @@ a {
   .header .header_nav_wrapper .navbar .hamburger.active .line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  .footer .footer-top {
+    height: auto;
+  }
+  .footer .footer-top .footer-top-wrapper {
+    padding: 100px 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
 }
 /* ---------------------  /max-width 992px ------------------------- */
 /* ---------------------  max-width 768px ------------------------- */
@@ -612,6 +639,20 @@ a {
   }
   .Prepare .Prepare-container .prepareLeft p {
     font-size: 2.8rem;
+  }
+  .footer .footer-top {
+    height: auto;
+  }
+  .footer .footer-top .footer-top-wrapper {
+    padding: 100px 20px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-Link ul {
+    padding-top: 0;
+  }
+  .footer .footer-bottom .footer-bottom-container {
+    padding: 0 50px;
   }
 }
 /* ---------------------  /max-width 768px ------------------------- */
@@ -668,6 +709,68 @@ a {
   .Prepare .Prepare-container .prepareRight .prepare-btn {
     padding: 15px 35px;
     font-size: 1.5rem;
+  }
+  .footer .footer-top {
+    height: auto;
+  }
+  .footer .footer-top .footer-top-wrapper {
+    padding: 80px 12px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-about .footer-logo {
+    padding-bottom: 20px;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-about .footer-logo a {
+    font-size: 2.4rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-about .footer-logo a small {
+    font-size: 2.4rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-about .footer-content p {
+    font-size: 1.4rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-service .footer-title h3 {
+    font-size: 1.6rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-service .foot-service-links {
+    padding-top: 20px;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-service .foot-service-links ul a {
+    font-size: 1.4rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-Link ul {
+    padding-top: 0;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-Link ul a {
+    font-size: 1.4rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-post .footer-title h3 {
+    font-size: 1.6rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-post ul {
+    padding-top: 20px;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-post ul li p {
+    font-size: 1.5rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-info .footer-title h3 {
+    font-size: 1.6rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-info ul {
+    padding-top: 20px;
+    grid-template-columns: 10px 1fr;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-info ul span {
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-info ul li {
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  .footer .footer-bottom .footer-bottom-container p {
+    font-size: 1.4rem;
   }
 }
 /* ---------------------  /max-width 568px ------------------------- */
@@ -726,6 +829,72 @@ a {
   .Prepare .Prepare-container .prepareRight .prepare-btn {
     padding: 12px 30px;
     font-size: 1.4rem;
+  }
+  .footer .footer-top {
+    height: auto;
+  }
+  .footer .footer-top .footer-top-wrapper {
+    padding: 80px 12px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-about .footer-logo {
+    padding-bottom: 20px;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-about .footer-logo a {
+    font-size: 2.2rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-about .footer-logo a small {
+    font-size: 2.2rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-about .footer-content p {
+    font-size: 1.2rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-service .footer-title h3 {
+    font-size: 1.6rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-service .foot-service-links {
+    padding-top: 20px;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-service .foot-service-links ul a {
+    font-size: 1.2rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-Link ul {
+    padding-top: 0;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-Link ul a {
+    font-size: 1.2rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-post .footer-title h3 {
+    font-size: 1.6rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-post ul {
+    padding-top: 20px;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-post ul li p {
+    font-size: 1.3rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-info .footer-title h3 {
+    font-size: 1.6rem;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-info ul {
+    padding-top: 20px;
+    grid-template-columns: 10px 1fr;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-info ul span {
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  .footer .footer-top .footer-top-wrapper .footer-info ul li {
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  .footer .footer-bottom .footer-bottom-container {
+    padding: 0 50px;
+  }
+  .footer .footer-bottom .footer-bottom-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
   }
 }
 /* ---------------------  /max-width 378px ------------------------- *//*# sourceMappingURL=main.css.map */
