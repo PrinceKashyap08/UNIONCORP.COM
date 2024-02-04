@@ -607,6 +607,12 @@ a {
   .map .map-container {
     padding: 0 20px;
   }
+  .Prepare .Prepare-container {
+    padding: 80px 20px;
+  }
+  .Prepare .Prepare-container .prepareLeft p {
+    font-size: 2.8rem;
+  }
 }
 /* ---------------------  /max-width 768px ------------------------- */
 /* ---------------------  max-width 568px ------------------------- */
@@ -644,6 +650,24 @@ a {
   }
   .map .map-container {
     padding: 0 12px;
+  }
+  .Prepare .Prepare-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 60px 12px;
+  }
+  .Prepare .Prepare-container .prepareLeft h4 {
+    font-size: 1.4rem;
+  }
+  .Prepare .Prepare-container .prepareLeft p {
+    font-size: 2.5rem;
+  }
+  .Prepare .Prepare-container .prepareRight {
+    justify-self: start;
+    margin-top: 30px;
+  }
+  .Prepare .Prepare-container .prepareRight .prepare-btn {
+    padding: 15px 35px;
+    font-size: 1.5rem;
   }
 }
 /* ---------------------  /max-width 568px ------------------------- */
@@ -687,6 +711,20 @@ a {
     font-size: 1.2rem;
   }
   .contactUs .contactUs-box .contactUs-info .contactUs-items h4 {
+    font-size: 1.4rem;
+  }
+  .Prepare .Prepare-container .prepareLeft h4 {
+    font-size: 1.2rem;
+  }
+  .Prepare .Prepare-container .prepareLeft p {
+    font-size: 2rem;
+  }
+  .Prepare .Prepare-container .prepareRight {
+    justify-self: start;
+    margin-top: 30px;
+  }
+  .Prepare .Prepare-container .prepareRight .prepare-btn {
+    padding: 12px 30px;
     font-size: 1.4rem;
   }
 }
