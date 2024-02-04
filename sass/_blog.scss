@@ -1,0 +1,112 @@
+/* ---------------------  BlogContent ------------------------- */
+.BlogContent{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: #f9faff;
+    .Blog-container{
+        @include max-width;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 30px;
+        .BlogContent{
+            .BlogContent-items{
+                margin-bottom: 30px;
+                background-color: $white;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 30px;
+                .Blog-img{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .Blog-info{
+                    padding: 30px 30px 30px 0;
+                    .blog-box{
+                        padding-bottom: 20px;
+                        ul{
+                            display: flex;
+                            gap: 20px;
+                            li{
+                                font-size: 1.2rem;
+                                font-weight: 500;
+                                color: #8c8c8c;
+                                i{
+                                    color: $Primary;
+                                }
+                            }
+                            li:nth-child(3){
+                                font-weight: 500;
+                                color: $Primary;
+                            }
+                        }
+                    }
+                    h3{
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        color: #000;
+                        padding-bottom: 20px;
+                    }
+                    p{
+                        font-size: 1.6rem;
+                        color: #8c8c8c;
+                        padding-bottom: 40px;
+                    }
+                    .blog-btn{
+                        padding: 12px 20px;
+                        color: $white;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        background-color: $Primary;
+                        border-radius: 5px;
+                        transition: 0.5s;
+                        &:hover{
+                            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+                        }
+                    }
+                }
+            }
+            .blog-pagination{
+                padding-top: 20px;
+                justify-self: center;
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    li{
+                        border: 1px solid rgba(0,0,0,0.3);
+                        transition: 0.4s;
+                        a{
+                            font-size: 1.4rem;
+                            display: grid;
+                            place-items: center;
+                            color: $white;
+                            color: #000;
+                            transition: 0.4s ease;
+                            width: 50px;
+                            height: 50px;
+                            &:hover{
+                                color: $white;
+                                background-color: $Primary;
+                            }
+                            &.active{
+                                color: $white;
+                                background-color: $Primary;
+                            }
+                            i{
+                                font-size: 1.6rem;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ---------------------  /BlogContent ------------------------- */

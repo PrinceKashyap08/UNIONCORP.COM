@@ -58,6 +58,12 @@
         }
     }
 
+    .BlogContent{
+        .Blog-container{
+            grid-template-columns: 1fr;
+        }
+    }
+
     .footer{
         .footer-top{
             height: auto;
@@ -86,6 +92,23 @@
                 .nav-menu {
                     gap: 30px;
                     padding: 30px 20px;
+                }
+            }
+        }
+    }
+
+    .BlogContent{
+        .Blog-container{
+            grid-template-columns: 1fr;
+            padding: 0 20px;
+            .BlogContent{
+                .BlogContent-items{
+                    margin-bottom: 30px;
+                    grid-template-columns: repeat(1,1fr);
+                    gap: 20px;
+                    .Blog-info{
+                        padding: 30px;
+                    }
                 }
             }
         }
@@ -197,6 +220,30 @@
 
                     a {
                         font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .BlogContent{
+        .Blog-container{
+            padding: 0 12px;
+            .BlogContent{
+                .BlogContent-items{
+                    margin-bottom: 30px;
+                    .Blog-info{
+                        padding: 30px;
+                        h3{
+                            font-size: 1.6rem;
+                        }
+                        p{
+                            font-size: 1.4rem;
+                        }
+                        .blog-btn{
+                            padding: 12px 20px;
+                            font-size: 1.6rem;
+                        }
                     }
                 }
             }
@@ -384,6 +431,41 @@
                 .hamburger{
                     .line{
                         width: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .BlogContent{
+        .Blog-container{
+            padding: 0 12px;
+            .BlogContent{
+                .BlogContent-items{
+                    margin-bottom: 30px;
+                    .Blog-info{
+                        padding: 20px;
+                        h3{
+                            font-size: 1.4rem;
+                        }
+                        p{
+                            font-size: 1.2rem;
+                        }
+                        .blog-btn{
+                            padding: 12px 20px;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+                .blog-pagination{
+                    ul{
+                        li{
+                            a{
+                                width: 40px;
+                                height: 40px;
+                                font-size: 1.2rem;
+                            }
+                        }
                     }
                 }
             }
