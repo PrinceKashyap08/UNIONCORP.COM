@@ -1,3 +1,13 @@
+/* ---------------------  max-width 1024px ------------------------- */
+@media (max-width: 1250px) {
+    .map {
+        .map-container {
+            padding: 0 30px;
+        }
+    }
+}
+/* ---------------------  max-width 1024px ------------------------- */
+
 /* ---------------------  max-width 992px ------------------------- */
 @media (max-width: 992px) {
     .header {
@@ -81,6 +91,45 @@
             }
         }
     }
+
+    .contactUs{
+        padding: 0 20px;
+        padding-top: 80px;
+        .contactUs-box{
+            padding: 25px;
+            .contactUs-title {
+                h3 {
+                    font-size: 2.2rem;
+                }
+    
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+            .contactUs-info{
+                grid-template-columns: repeat(1,1fr);
+                gap: 20px;
+                .contactUs-items {
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            .contactUs-form{
+                form{
+                    .contactBox-50{
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+   
+    .map {
+        .map-container {
+            padding: 0 20px;
+        }
+    }
 }
 
 /* ---------------------  /max-width 768px ------------------------- */
@@ -120,6 +169,30 @@
                     }
                 }
             }
+        }
+    }
+
+    .contactUs{
+        padding: 0 12px;
+        padding-top: 80px;
+        .contactUs-box{
+            .contactUs-form{
+                form{
+                    .contactBox-50{
+                        flex-direction: column;
+                    }
+                    .contactUs-btn {
+                        padding: 12px 24px;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .map {
+        .map-container {
+            padding: 0 12px;
         }
     }
 }
@@ -174,6 +247,29 @@
 
                     p {
                         font-size: 3.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .contactUs{
+        .contactUs-box{
+            .contactUs-title {
+                h3{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+            .contactUs-info{
+                .contactUs-items{
+                    p{
+                        font-size: 1.2rem;
+                    }
+                    h4{
+                        font-size: 1.4rem;
                     }
                 }
             }
