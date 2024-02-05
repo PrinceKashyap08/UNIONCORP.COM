@@ -49,6 +49,9 @@
                         color: $white;
                     }
                 }
+                .hamburger{
+                    display: block;
+                }
 
                 .hamburger.active .line:nth-child(2) {
                     background-color: transparent;

@@ -30,7 +30,6 @@ a {
   width: 100%;
   height: auto;
   padding-top: 100px;
-  padding-bottom: 50px;
   background: #f9faff;
 }
 .studies .studies-title {
@@ -58,6 +57,7 @@ a {
   font-size: 3.8rem;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 50px;
 }
 .studies .studies-container {
   max-width: 1320px;
@@ -625,6 +625,7 @@ a {
 }
 .header .header_nav_wrapper .navbar .hamburger {
   cursor: pointer;
+  display: none;
 }
 .header .header_nav_wrapper .navbar .hamburger .line {
   width: 35px;
@@ -1085,6 +1086,9 @@ a {
   }
   .header .header_nav_wrapper .navbar .nav-menu a {
     color: #ffffff;
+  }
+  .header .header_nav_wrapper .navbar .hamburger {
+    display: block;
   }
   .header .header_nav_wrapper .navbar .hamburger.active .line:nth-child(2) {
     background-color: transparent;
