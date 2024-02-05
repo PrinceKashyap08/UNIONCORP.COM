@@ -25,6 +25,163 @@ a {
 }
 
 /*---------- /Classes-style -------------- */
+/* ----------------- Studies_style ------------------ */
+.studies {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+}
+.studies .studies-title {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+}
+.studies .studies-title h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.studies .studies-title h2 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* ----------------- /Studies_style ------------------ */
+/* --------------------- OurPricing ----------------------------- */
+.OurPricing {
+  width: 100%;
+  height: auto;
+  padding: 120px 0;
+  background: #f9faff;
+}
+.OurPricing .OurPricing-title {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+}
+.OurPricing .OurPricing-title h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.OurPricing .OurPricing-title h2 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+.OurPricing .ourPricing-container {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-align: center;
+  gap: 30px;
+  padding-top: 50px;
+}
+.OurPricing .ourPricing-container .OurPricing-items {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  transition: 0.5s ease;
+}
+.OurPricing .ourPricing-container .OurPricing-items:hover {
+  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
+}
+.OurPricing .ourPricing-container .OurPricing-items:hover h3 {
+  color: #3bd381;
+}
+.OurPricing .ourPricing-container .OurPricing-items:hover .Ourpricing-info .OurPricing-btn {
+  background-color: #3bd381;
+}
+.OurPricing .ourPricing-container .OurPricing-items h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #4f86f9;
+  transition: 0.3s;
+}
+.OurPricing .ourPricing-container .OurPricing-items p {
+  color: #000;
+  font-weight: 500;
+  font-size: 4rem;
+}
+.OurPricing .ourPricing-container .OurPricing-items p sup {
+  color: #8c8c8c;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.OurPricing .ourPricing-container .OurPricing-items p sub {
+  color: #8c8c8c;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.OurPricing .ourPricing-container .OurPricing-items .Ourpricing-info {
+  padding-top: 20px;
+}
+.OurPricing .ourPricing-container .OurPricing-items .Ourpricing-info ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 20px;
+}
+.OurPricing .ourPricing-container .OurPricing-items .Ourpricing-info ul li {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+.OurPricing .ourPricing-container .OurPricing-items .Ourpricing-info ul li i {
+  font-size: 1.2rem;
+}
+.OurPricing .ourPricing-container .OurPricing-items .Ourpricing-info ul .active {
+  color: #cccccc;
+}
+.OurPricing .ourPricing-container .OurPricing-items .Ourpricing-info ul .OurPricing-btn {
+  display: inline-block;
+  width: 160px;
+  margin: auto;
+  text-transform: uppercase;
+  padding: 14px 25px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: none;
+  color: #ffffff;
+  background-color: #4f86f9;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.OurPricing .ourPricing-container .OurPricing-items:nth-child(1) {
+  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
+}
+.OurPricing .ourPricing-container .OurPricing-items:nth-child(1) h3 {
+  color: #3bd381;
+}
+.OurPricing .ourPricing-container .OurPricing-items:nth-child(1) .Ourpricing-info .OurPricing-btn {
+  background-color: #3bd381;
+}
+
+/* --------------------- /OurPricing ----------------------------- */
 /* ---------------------  BlogContent ------------------------- */
 .BlogContent {
   width: 100%;
@@ -136,7 +293,7 @@ a {
   background-color: #4f86f9;
 }
 .BlogContent .Blog-container .BlogContent .blog-pagination ul li a i {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .BlogContent .Blog-container .BlogAside {
   padding-top: 50px;
@@ -161,6 +318,7 @@ a {
   border: none;
   color: #4f86f9;
   background-color: #ffffff;
+  cursor: pointer;
 }
 .BlogContent .Blog-container .BlogAside .blog-service h3 {
   font-size: 2rem;
@@ -787,6 +945,9 @@ a {
 /* ------------------------- /Footer-style ---------------------------- */
 /* ---------------------  max-width 1024px ------------------------- */
 @media (max-width: 1250px) {
+  .OurPricing .ourPricing-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .map .map-container {
     padding: 0 30px;
   }
@@ -854,6 +1015,25 @@ a {
   .header .header_nav_wrapper .navbar .nav-menu {
     gap: 30px;
     padding: 30px 20px;
+  }
+  .studies .studies-title {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .studies .studies-title h3 {
+    font-size: 1.4rem;
+  }
+  .studies .studies-title h2 {
+    font-size: 3.2rem;
+  }
+  .OurPricing .OurPricing-title {
+    padding: 0 20px;
+  }
+  .OurPricing .OurPricing-title h3 {
+    font-size: 1.4rem;
+  }
+  .OurPricing .OurPricing-title h2 {
+    font-size: 3.5rem;
   }
   .BlogContent .Blog-container {
     grid-template-columns: 1fr;
@@ -940,6 +1120,25 @@ a {
   }
   .header .header_nav_wrapper .navbar .nav-menu a {
     font-size: 1.4rem;
+  }
+  .studies .studies-title {
+    padding: 0 12px;
+  }
+  .studies .studies-title h3 {
+    font-size: 1.4rem;
+  }
+  .studies .studies-title h2 {
+    font-size: 2.5rem;
+  }
+  .OurPricing .OurPricing-title {
+    padding: 0 12px;
+  }
+  .OurPricing .OurPricing-title h2 {
+    font-size: 3.2rem;
+  }
+  .OurPricing .ourPricing-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 12px;
   }
   .BlogContent .Blog-container {
     padding: 0 12px;
@@ -1110,6 +1309,38 @@ a {
   }
   .header .header_nav_wrapper .navbar .hamburger .line {
     width: 30px;
+  }
+  .studies .studies-title {
+    text-align: center;
+    padding: 0 12px;
+  }
+  .studies .studies-title h3 {
+    font-size: 1.2rem;
+  }
+  .studies .studies-title h2 {
+    font-size: 2.2rem;
+  }
+  .OurPricing .OurPricing-title h3 {
+    font-size: 1.2rem;
+  }
+  .OurPricing .OurPricing-title h2 {
+    font-size: 2.2rem;
+  }
+  .OurPricing .ourPricing-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 12px;
+  }
+  .OurPricing .ourPricing-container .OurPricing-items .OurPricing-box h3 {
+    font-size: 1.6rem;
+  }
+  .OurPricing .ourPricing-container .OurPricing-items .OurPricing-box p {
+    font-size: 2.2rem;
+  }
+  .OurPricing .ourPricing-container .OurPricing-items .Ourpricing-info ul li {
+    font-size: 1.4rem;
+  }
+  .OurPricing .ourPricing-container .OurPricing-items .Ourpricing-info ul .OurPricing-btn {
+    font-size: 1.2rem;
   }
   .BlogContent .Blog-container {
     padding: 0 12px;

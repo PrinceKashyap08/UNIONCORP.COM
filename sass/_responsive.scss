@@ -1,11 +1,18 @@
 /* ---------------------  max-width 1024px ------------------------- */
 @media (max-width: 1250px) {
+    .OurPricing {
+        .ourPricing-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
     .map {
         .map-container {
             padding: 0 30px;
         }
     }
 }
+
 /* ---------------------  max-width 1024px ------------------------- */
 
 /* ---------------------  max-width 992px ------------------------- */
@@ -58,16 +65,17 @@
         }
     }
 
-    .BlogContent{
-        .Blog-container{
+    .BlogContent {
+        .Blog-container {
             grid-template-columns: 1fr;
         }
     }
 
-    .footer{
-        .footer-top{
+    .footer {
+        .footer-top {
             height: auto;
-            .footer-top-wrapper{
+
+            .footer-top-wrapper {
                 padding: 100px 30px;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 30px;
@@ -97,22 +105,52 @@
         }
     }
 
-    .BlogContent{
-        .Blog-container{
+    .studies{
+        .studies-title{
+            text-align: center;
+            padding: 0 20px;
+            h3{
+                font-size: 1.4rem;
+            }
+            h2{
+                font-size: 3.2rem;
+            }
+        }
+    }
+
+    .OurPricing {
+        .OurPricing-title {
+            padding: 0 20px;
+
+            h3 {
+                font-size: 1.4rem;
+            }
+
+            h2 {
+                font-size: 3.5rem;
+            }
+        }
+    }
+
+    .BlogContent {
+        .Blog-container {
             grid-template-columns: 1fr;
             padding: 0 20px;
             gap: 0;
-            .BlogContent{
-                .BlogContent-items{
+
+            .BlogContent {
+                .BlogContent-items {
                     margin-bottom: 30px;
-                    grid-template-columns: repeat(1,1fr);
+                    grid-template-columns: repeat(1, 1fr);
                     gap: 20px;
-                    .Blog-info{
+
+                    .Blog-info {
                         padding: 30px;
                     }
                 }
             }
-            .BlogAside{
+
+            .BlogAside {
                 padding-top: 10px;
             }
         }
@@ -130,39 +168,44 @@
         }
     }
 
-    .contactUs{
+    .contactUs {
         padding: 0 20px;
         padding-top: 80px;
-        .contactUs-box{
+
+        .contactUs-box {
             padding: 25px;
+
             .contactUs-title {
                 h3 {
                     font-size: 2.2rem;
                 }
-    
+
                 p {
                     font-size: 1.4rem;
                 }
             }
-            .contactUs-info{
-                grid-template-columns: repeat(1,1fr);
+
+            .contactUs-info {
+                grid-template-columns: repeat(1, 1fr);
                 gap: 20px;
+
                 .contactUs-items {
                     p {
                         font-size: 1.4rem;
                     }
                 }
             }
-            .contactUs-form{
-                form{
-                    .contactBox-50{
+
+            .contactUs-form {
+                form {
+                    .contactBox-50 {
                         flex-direction: column;
                     }
                 }
             }
         }
     }
-   
+
     .map {
         .map-container {
             padding: 0 20px;
@@ -172,6 +215,7 @@
     .Prepare {
         .Prepare-container {
             padding: 80px 20px;
+
             .prepareLeft {
                 p {
                     font-size: 2.8rem;
@@ -180,22 +224,25 @@
         }
     }
 
-    .footer{
-        .footer-top{
+    .footer {
+        .footer-top {
             height: auto;
-            .footer-top-wrapper{
+
+            .footer-top-wrapper {
                 padding: 100px 20px;
                 grid-template-columns: 1fr;
                 gap: 30px;
-                .footer-Link{
-                    ul{
+
+                .footer-Link {
+                    ul {
                         padding-top: 0;
                     }
                 }
             }
         }
-        .footer-bottom{
-            .footer-bottom-container{
+
+        .footer-bottom {
+            .footer-bottom-container {
                 padding: 0 50px;
             }
         }
@@ -230,57 +277,92 @@
         }
     }
 
-    .BlogContent{
-        .Blog-container{
+    .studies{
+        .studies-title{
             padding: 0 12px;
-            .BlogContent{
-                .BlogContent-items{
+            h3{
+                font-size: 1.4rem;
+            }
+            h2{
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .OurPricing {
+        .OurPricing-title {
+            padding: 0 12px;
+            h2 {
+                font-size: 3.2rem;
+            }
+        }
+        .ourPricing-container{
+            grid-template-columns: repeat(1,1fr);
+            padding: 50px 12px ;
+        }
+    }
+
+    .BlogContent {
+        .Blog-container {
+            padding: 0 12px;
+
+            .BlogContent {
+                .BlogContent-items {
                     margin-bottom: 30px;
-                    .Blog-info{
+
+                    .Blog-info {
                         padding: 30px;
-                        h3{
+
+                        h3 {
                             font-size: 1.6rem;
                         }
-                        p{
+
+                        p {
                             font-size: 1.4rem;
                         }
-                        .blog-btn{
+
+                        .blog-btn {
                             padding: 12px 20px;
                             font-size: 1.6rem;
                         }
                     }
                 }
             }
-            .BlogAside{
+
+            .BlogAside {
                 padding-top: 10px;
+
                 .blog-service {
                     h3 {
                         font-size: 1.8rem;
                     }
-    
+
                     ul {
                         li {
                             font-size: 1.4rem;
+
                             i {
                                 font-size: 1.2rem;
                             }
                         }
                     }
                 }
-    
-                .blog-recent{
-                    h3{
+
+                .blog-recent {
+                    h3 {
                         font-size: 1.8rem;
                     }
-                    .blog-container{
-                        .blog-recent-box{
-                            .blog-recent-right{
-                                .blog-recent-items{
-                                    h4{
+
+                    .blog-container {
+                        .blog-recent-box {
+                            .blog-recent-right {
+                                .blog-recent-items {
+                                    h4 {
                                         font-size: 1.6rem;
                                     }
-                                    ul{
-                                        li{
+
+                                    ul {
+                                        li {
                                             font-size: 1.2rem;
                                         }
                                     }
@@ -289,17 +371,19 @@
                         }
                     }
                 }
-    
+
                 .blog-tab {
                     h3 {
                         font-size: 1.8rem;
                     }
                 }
+
                 .blog-paragraph {
                     h3 {
                         font-size: 1.8rem;
                     }
-                    p{
+
+                    p {
                         line-height: 1.6;
                     }
                 }
@@ -319,15 +403,17 @@
         }
     }
 
-    .contactUs{
+    .contactUs {
         padding: 0 12px;
         padding-top: 80px;
-        .contactUs-box{
-            .contactUs-form{
-                form{
-                    .contactBox-50{
+
+        .contactUs-box {
+            .contactUs-form {
+                form {
+                    .contactBox-50 {
                         flex-direction: column;
                     }
+
                     .contactUs-btn {
                         padding: 12px 24px;
                         font-size: 1.4rem;
@@ -347,19 +433,21 @@
         .Prepare-container {
             grid-template-columns: repeat(1, 1fr);
             padding: 60px 12px;
+
             .prepareLeft {
                 h4 {
                     font-size: 1.4rem;
                 }
-    
+
                 p {
                     font-size: 2.5rem;
                 }
             }
+
             .prepareRight {
                 justify-self: start;
                 margin-top: 30px;
-    
+
                 .prepare-btn {
                     padding: 15px 35px;
                     font-size: 1.5rem;
@@ -367,81 +455,99 @@
             }
         }
     }
-    .footer{
-        .footer-top{
+
+    .footer {
+        .footer-top {
             height: auto;
-            .footer-top-wrapper{
+
+            .footer-top-wrapper {
                 padding: 80px 12px;
                 grid-template-columns: 1fr;
                 gap: 30px;
-                .footer-about{
-                    .footer-logo{
+
+                .footer-about {
+                    .footer-logo {
                         padding-bottom: 20px;
-                        a{
+
+                        a {
                             font-size: 2.4rem;
-                            small{
+
+                            small {
                                 font-size: 2.4rem;
                             }
                         }
                     }
-                    .footer-content{
-                        p{
+
+                    .footer-content {
+                        p {
                             font-size: 1.4rem;
                         }
                     }
                 }
-                .footer-service{
-                    .footer-title{
-                        h3{
+
+                .footer-service {
+                    .footer-title {
+                        h3 {
                             font-size: 1.6rem;
                         }
                     }
-                    .foot-service-links{
+
+                    .foot-service-links {
                         padding-top: 20px;
-                        ul{
-                            a{
+
+                        ul {
+                            a {
                                 font-size: 1.4rem;
                             }
                         }
                     }
                 }
-                .footer-Link{
-                    ul{
+
+                .footer-Link {
+                    ul {
                         padding-top: 0;
-                        a{
+
+                        a {
                             font-size: 1.4rem;
                         }
                     }
                 }
-                .footer-post{
-                    .footer-title{
-                        h3{
+
+                .footer-post {
+                    .footer-title {
+                        h3 {
                             font-size: 1.6rem;
                         }
                     }
-                    ul{
+
+                    ul {
                         padding-top: 20px;
-                        li{
-                            p{
+
+                        li {
+                            p {
                                 font-size: 1.5rem;
                             }
                         }
                     }
                 }
-                .footer-info{
-                    .footer-title{
-                        h3{
+
+                .footer-info {
+                    .footer-title {
+                        h3 {
                             font-size: 1.6rem;
                         }
                     }
-                    ul{
+
+                    ul {
                         padding-top: 20px;
                         grid-template-columns: 10px 1fr;
-                        span{
+
+                        span {
                             font-size: 1.4rem;
                             color: $white;
                         }
-                        li{
+
+                        li {
                             font-size: 1.4rem;
                             color: $white;
                         }
@@ -449,15 +555,16 @@
                 }
             }
         }
-        .footer-bottom{
-            .footer-bottom-container{
-                p{
+
+        .footer-bottom {
+            .footer-bottom-container {
+                p {
                     font-size: 1.4rem;
                 }
             }
         }
     }
-    
+
 }
 
 /* ---------------------  /max-width 568px ------------------------- */
@@ -485,8 +592,9 @@
                         font-size: 1.2rem;
                     }
                 }
-                .hamburger{
-                    .line{
+
+                .hamburger {
+                    .line {
                         width: 30px;
                     }
                 }
@@ -494,30 +602,84 @@
         }
     }
 
-    .BlogContent{
-        .Blog-container{
+    .studies{
+        .studies-title{
+            text-align: center;
             padding: 0 12px;
-            .BlogContent{
-                .BlogContent-items{
-                    margin-bottom: 30px;
-                    .Blog-info{
-                        padding: 30px;
-                        h3{
+            h3{
+                font-size: 1.2rem;
+            }
+            h2{
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+    .OurPricing {
+        .OurPricing-title {
+            h3{
+                font-size: 1.2rem;
+            }
+            h2 {
+                font-size: 2.2rem;
+            }
+        }
+        .ourPricing-container{
+            grid-template-columns: repeat(1,1fr);
+            padding: 50px 12px;
+            .OurPricing-items{
+                .OurPricing-box{
+                    h3{
+                        font-size: 1.6rem;
+                    }
+                    p{
+                        font-size: 2.2rem;
+                    }
+                }
+                .Ourpricing-info{
+                    ul{
+                        li{
                             font-size: 1.4rem;
                         }
-                        p{
+                        .OurPricing-btn{
                             font-size: 1.2rem;
                         }
-                        .blog-btn{
+                    }
+                }
+            }
+        }
+    }
+
+    .BlogContent {
+        .Blog-container {
+            padding: 0 12px;
+
+            .BlogContent {
+                .BlogContent-items {
+                    margin-bottom: 30px;
+
+                    .Blog-info {
+                        padding: 30px;
+
+                        h3 {
+                            font-size: 1.4rem;
+                        }
+
+                        p {
+                            font-size: 1.2rem;
+                        }
+
+                        .blog-btn {
                             padding: 12px 20px;
                             font-size: 1.4rem;
                         }
                     }
                 }
-                .blog-pagination{
-                    ul{
-                        li{
-                            a{
+
+                .blog-pagination {
+                    ul {
+                        li {
+                            a {
                                 width: 30px;
                                 height: 30px;
                                 font-size: 1.2rem;
@@ -526,36 +688,41 @@
                     }
                 }
             }
-            .BlogAside{
+
+            .BlogAside {
                 padding-top: 10px;
+
                 .blog-service {
                     h3 {
                         font-size: 1.6rem;
                     }
-    
+
                     ul {
                         li {
                             font-size: 1.4rem;
+
                             i {
                                 font-size: 1.2rem;
                             }
                         }
                     }
                 }
-    
-                .blog-recent{
-                    h3{
+
+                .blog-recent {
+                    h3 {
                         font-size: 1.8rem;
                     }
-                    .blog-container{
-                        .blog-recent-box{
-                            .blog-recent-right{
-                                .blog-recent-items{
-                                    h4{
+
+                    .blog-container {
+                        .blog-recent-box {
+                            .blog-recent-right {
+                                .blog-recent-items {
+                                    h4 {
                                         font-size: 1.4rem;
                                     }
-                                    ul{
-                                        li{
+
+                                    ul {
+                                        li {
                                             font-size: 1.2rem;
                                         }
                                     }
@@ -564,17 +731,19 @@
                         }
                     }
                 }
-    
+
                 .blog-tab {
                     h3 {
                         font-size: 1.6rem;
                     }
                 }
+
                 .blog-paragraph {
                     h3 {
                         font-size: 1.6rem;
                     }
-                    p{
+
+                    p {
                         line-height: 1.6;
                         font-size: 1.2rem;
                     }
@@ -605,22 +774,25 @@
         }
     }
 
-    .contactUs{
-        .contactUs-box{
+    .contactUs {
+        .contactUs-box {
             .contactUs-title {
-                h3{
+                h3 {
                     font-size: 2rem;
                 }
-                p{
+
+                p {
                     font-size: 1.2rem;
                 }
             }
-            .contactUs-info{
-                .contactUs-items{
-                    p{
+
+            .contactUs-info {
+                .contactUs-items {
+                    p {
                         font-size: 1.2rem;
                     }
-                    h4{
+
+                    h4 {
                         font-size: 1.4rem;
                     }
                 }
@@ -634,15 +806,16 @@
                 h4 {
                     font-size: 1.2rem;
                 }
-    
+
                 p {
                     font-size: 2rem;
                 }
             }
+
             .prepareRight {
                 justify-self: start;
                 margin-top: 30px;
-    
+
                 .prepare-btn {
                     padding: 12px 30px;
                     font-size: 1.4rem;
@@ -651,81 +824,98 @@
         }
     }
 
-    .footer{
-        .footer-top{
+    .footer {
+        .footer-top {
             height: auto;
-            .footer-top-wrapper{
+
+            .footer-top-wrapper {
                 padding: 80px 12px;
                 grid-template-columns: 1fr;
                 gap: 30px;
-                .footer-about{
-                    .footer-logo{
+
+                .footer-about {
+                    .footer-logo {
                         padding-bottom: 20px;
-                        a{
+
+                        a {
                             font-size: 2.2rem;
-                            small{
+
+                            small {
                                 font-size: 2.2rem;
                             }
                         }
                     }
-                    .footer-content{
-                        p{
+
+                    .footer-content {
+                        p {
                             font-size: 1.2rem;
                         }
                     }
                 }
-                .footer-service{
-                    .footer-title{
-                        h3{
+
+                .footer-service {
+                    .footer-title {
+                        h3 {
                             font-size: 1.6rem;
                         }
                     }
-                    .foot-service-links{
+
+                    .foot-service-links {
                         padding-top: 20px;
-                        ul{
-                            a{
+
+                        ul {
+                            a {
                                 font-size: 1.2rem;
                             }
                         }
                     }
                 }
-                .footer-Link{
-                    ul{
+
+                .footer-Link {
+                    ul {
                         padding-top: 0;
-                        a{
+
+                        a {
                             font-size: 1.2rem;
                         }
                     }
                 }
-                .footer-post{
-                    .footer-title{
-                        h3{
+
+                .footer-post {
+                    .footer-title {
+                        h3 {
                             font-size: 1.6rem;
                         }
                     }
-                    ul{
+
+                    ul {
                         padding-top: 20px;
-                        li{
-                            p{
+
+                        li {
+                            p {
                                 font-size: 1.3rem;
                             }
                         }
                     }
                 }
-                .footer-info{
-                    .footer-title{
-                        h3{
+
+                .footer-info {
+                    .footer-title {
+                        h3 {
                             font-size: 1.6rem;
                         }
                     }
-                    ul{
+
+                    ul {
                         padding-top: 20px;
                         grid-template-columns: 10px 1fr;
-                        span{
+
+                        span {
                             font-size: 1.4rem;
                             color: $white;
                         }
-                        li{
+
+                        li {
                             font-size: 1.2rem;
                             color: $white;
                         }
@@ -733,10 +923,12 @@
                 }
             }
         }
-        .footer-bottom{
-            .footer-bottom-container{
+
+        .footer-bottom {
+            .footer-bottom-container {
                 padding: 0 50px;
-                p{
+
+                p {
                     font-size: 1.2rem;
                     line-height: 1.6;
                 }

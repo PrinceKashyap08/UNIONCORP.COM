@@ -1,0 +1,116 @@
+/* --------------------- OurPricing ----------------------------- */
+.OurPricing{
+    width: 100%;
+    height: auto;
+    padding: 120px 0;
+    background: #f9faff;
+    .OurPricing-title{
+        @include max-width;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h3{
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding-bottom: 5px;
+            color: rgba(0, 0, 0, 0.3);
+        }
+        h2{
+            font-size: 3.8rem;
+            font-weight: 500;
+            color: #000000cc;
+        }
+    }
+    .ourPricing-container{
+        @include max-width;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+        padding-top: 50px;
+        .OurPricing-items{
+            background-color: $white;
+            padding: 50px 40px;
+            transition: 0.5s ease;
+            &:hover{
+                box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
+                h3{
+                    color: #3bd381;
+                }
+                .Ourpricing-info{
+                    .OurPricing-btn{
+                        background-color: #3bd381;
+                    }
+                }
+            }
+            h3{
+                font-size: 1.8rem;
+                font-weight: 400;
+                color: $Primary;
+                transition: 0.3s;
+            }
+            p{
+                color: #000;
+                font-weight: 500;
+                font-size: 4rem;
+                sup{
+                    color: #8c8c8c;
+                    font-size: 1.8rem;
+                    font-weight: 300;
+                }
+                sub{
+                    color: #8c8c8c;
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                }
+            }
+            .Ourpricing-info{
+                padding-top: 20px;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    li{
+                        font-size: 1.6rem;
+                        color: #000000cc;
+                        i{
+                            font-size: 1.2rem;
+                        }
+                    }
+                    .active{
+                        color: #cccccc;
+                    }
+                    .OurPricing-btn{
+                        display: inline-block;
+                        width: 160px;
+                        margin: auto;
+                        text-transform: uppercase;
+                        padding: 14px 25px;
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        border: none;
+                        color: $white;
+                        background-color: $Primary;
+                        cursor: pointer;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+        .OurPricing-items:nth-child(1){
+            box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
+            h3{
+                color: #3bd381;
+            }
+            .Ourpricing-info{
+                .OurPricing-btn{
+                    background-color: #3bd381;
+                }
+            }
+        }
+    }
+}
+/* --------------------- /OurPricing ----------------------------- */
