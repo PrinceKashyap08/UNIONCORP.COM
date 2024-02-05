@@ -29,7 +29,9 @@ a {
 .studies {
   width: 100%;
   height: auto;
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background: #f9faff;
 }
 .studies .studies-title {
   max-width: 1320px;
@@ -44,6 +46,7 @@ a {
   -ms-flex-align: center;
       align-items: center;
   text-align: center;
+  padding-bottom: 50px;
 }
 .studies .studies-title h3 {
   font-size: 1.4rem;
@@ -56,8 +59,109 @@ a {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.8);
 }
+.studies .studies-container {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 320px 320px;
+  gap: 20px;
+}
+.studies .studies-container .studies-items {
+  position: relative;
+  transition: 0.3s;
+}
+.studies .studies-container .studies-items::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+}
+.studies .studies-container .studies-items:hover::after {
+  visibility: visible;
+}
+.studies .studies-container .studies-items:hover .studies-img .studies-overlay .studies-icon {
+  z-index: 10;
+  visibility: visible;
+}
+.studies .studies-container .studies-items:hover .studies-img .studies-overlay .studies-paragraph {
+  z-index: 10;
+  visibility: visible;
+}
+.studies .studies-container .studies-items .studies-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.studies .studies-container .studies-items .studies-img img {
+  width: 100%;
+  height: 100%;
+}
+.studies .studies-container .studies-items .studies-img .studies-overlay .studies-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 14px;
+  color: #ffffff;
+  background-color: #3bd381;
+  visibility: hidden;
+}
+.studies .studies-container .studies-items .studies-img .studies-overlay .studies-icon i {
+  font-size: 1.4rem;
+}
+.studies .studies-container .studies-items .studies-img .studies-overlay .studies-paragraph {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  color: #ffffff;
+  visibility: hidden;
+}
+.studies .studies-container .studies-items .studies-img .studies-overlay .studies-paragraph p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
 
 /* ----------------- /Studies_style ------------------ */
+/* ----------------- StudiesLink_style ------------------ */
+.studiesPagition {
+  width: 100%;
+  height: auto;
+  background: #f9faff;
+  padding: 50px 0;
+}
+.studiesPagition .studies-Link ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 50px;
+}
+.studiesPagition .studies-Link ul li {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: #8c8c8c;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.studiesPagition .studies-Link ul li:hover, .studiesPagition .studies-Link ul li.active {
+  color: #ffffff;
+  background-color: #4f86f9;
+}
+
+/* ----------------- /StudiesLink_style ------------------ */
 /* --------------------- OurPricing ----------------------------- */
 .OurPricing {
   width: 100%;
@@ -991,6 +1095,21 @@ a {
   .header .header_nav_wrapper .navbar .hamburger.active .line:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  .studies .studies-title {
+    text-align: center;
+    padding: 0 20px;
+  }
+  .studies .studies-title h3 {
+    font-size: 1.4rem;
+  }
+  .studies .studies-title h2 {
+    font-size: 3.2rem;
+  }
+  .studies .studies-container {
+    padding-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 320px 320px;
+  }
   .BlogContent .Blog-container {
     grid-template-columns: 1fr;
   }
@@ -1025,6 +1144,12 @@ a {
   }
   .studies .studies-title h2 {
     font-size: 3.2rem;
+  }
+  .studies .studies-container {
+    padding: 0 20px;
+    padding-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 320px 320px;
   }
   .OurPricing .OurPricing-title {
     padding: 0 20px;
@@ -1129,6 +1254,12 @@ a {
   }
   .studies .studies-title h2 {
     font-size: 2.5rem;
+  }
+  .studies .studies-container {
+    padding: 0 12px;
+    padding-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 320px 320px;
   }
   .OurPricing .OurPricing-title {
     padding: 0 12px;

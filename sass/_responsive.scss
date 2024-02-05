@@ -65,6 +65,24 @@
         }
     }
 
+    .studies{
+        .studies-title{
+            text-align: center;
+            padding: 0 20px;
+            h3{
+                font-size: 1.4rem;
+            }
+            h2{
+                font-size: 3.2rem;
+            }
+        }
+        .studies-container{
+            padding-top: 50px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 320px 320px;
+        }
+    }
+
     .BlogContent {
         .Blog-container {
             grid-template-columns: 1fr;
@@ -115,6 +133,12 @@
             h2{
                 font-size: 3.2rem;
             }
+        }
+        .studies-container{
+            padding: 0 20px;
+            padding-top: 50px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 320px 320px;
         }
     }
 
@@ -286,6 +310,12 @@
             h2{
                 font-size: 2.5rem;
             }
+        }
+        .studies-container{
+            padding: 0 12px;
+            padding-top: 50px;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 320px 320px;
         }
     }
 
