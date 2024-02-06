@@ -1,0 +1,257 @@
+/* ------------------------- header-style ------------------------- */
+.header {
+    position: relative;
+
+    .header_top_wrapper {
+        width: 100%;
+        height: 50px;
+        background-color: #052f48;
+
+        .header_box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+            height: 100%;
+            @include max-width;
+
+            .header_time {
+                p {
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 1.4rem;
+
+                    i {
+                        color: $Primary;
+                    }
+                }
+            }
+
+            .header_icon {
+                ul {
+                    display: flex;
+                    gap: 5px;
+
+                    li {
+                        width: 50px;
+                        height: 50px;
+                        background-color: $Primary;
+                        @include d-flex;
+
+                        i {
+                            font-size: 1.6rem;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header_nav_wrapper {
+        background-color: $white;
+        width: 100%;
+        height: 80px;
+
+        .navbar {
+            @include max-width;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+
+            .logo a{
+                font-size: 2.7rem;
+                font-weight: 700;
+                color: #000;
+                text-transform: uppercase;
+                span{
+                    color: #4f86f9;
+                }
+            }
+
+            .nav-menu {
+                display: flex;
+                gap: 50px;
+
+                a {
+                    font-size: 1.6rem;
+                    color: #000000cc;
+                    transition: all 0.3s ease;
+
+                    &:hover,
+                    &.active {
+                        color: $Primary;
+                    }
+                }
+            }
+            .hamburger{
+                cursor: pointer;
+                display: none;
+                .line{
+                    width: 35px;
+                    height: 3px;
+                    margin: 7px;
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------- /header-style ------------------------- */
+
+/* ------------------------- hero-style ------------------------- */
+.home_hero{
+    position: relative;
+    height: 700px;
+    padding-bottom: 100px;
+    .homeHero-container{
+        width: 100%;
+        height: 500px;
+        .hero-item{
+            .hero-img{
+                position: relative;
+                background-image: url(/image/bg_1.jpg);
+                background-position: 70% center;
+                height: 700px;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    background: #052c43;
+                    opacity: .5;
+                    width: 100%;
+                    height: 700px;
+                    z-index: 1000;
+                }
+                .hero-info{
+                    @include max-width2;
+                    position: relative;
+                    top: 30%;
+                    z-index: 100;
+                    height: 700px;
+                    text-align: center;
+                    z-index: 10000;
+                    h1{
+                        font-size: 6rem;
+                        font-weight: 400;
+                        color: $white;
+                        text-align: center;
+                        width: 60%;
+                        margin: auto;
+                    }
+                    .heading{
+                        font-size: 6rem;
+                        font-weight: 400;
+                        color: $white;
+                        text-align: center;
+                        width: 70%;
+                        margin: auto;
+                    }
+                    p{
+                        padding-top: 20px;
+                        font-size: 1.6rem;
+                        color: #fffffffc;
+                        width: 60%;
+                        margin: auto;
+                        padding-bottom: 20px;
+                    }
+                    .hero-btn{
+                        padding: 16px 28px;
+                        border: none;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        color: $Primary;
+                        text-transform: uppercase;
+                        background-color: $white;
+                        cursor: pointer;
+                        border-radius:5px;
+                        i{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .hero-item-2{
+            background-color: #4f86f9;
+            .hero-img-2{
+                position: relative;
+                background-image: url(/image/bg_2.jpg);
+                background-position: center;
+                height: 700px;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    background: #052c43;
+                    opacity: .5;
+                    width: 100%;
+                    height: 700px;
+                    z-index: 1000;
+                }
+                .hero-info{
+                    @include max-width2;
+                    position: relative;
+                    top: 30%;
+                    z-index: 100;
+                    height: 700px;
+                    text-align: center;
+                    z-index: 10000;
+                    h1{
+                        font-size: 6rem;
+                        font-weight: 400;
+                        color: $white;
+                        text-align: center;
+                        width: 60%;
+                        margin: auto;
+                    }
+                    .heading{
+                        font-size: 6rem;
+                        font-weight: 400;
+                        color: $white;
+                        text-align: center;
+                        width: 70%;
+                        margin: auto;
+                    }
+                    p{
+                        padding-top: 20px;
+                        font-size: 1.6rem;
+                        color: #fffffffc;
+                        width: 60%;
+                        margin: auto;
+                        padding-bottom: 20px;
+                    }
+                    .hero-btn{
+                        padding: 16px 28px;
+                        border: none;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        color: $Primary;
+                        text-transform: uppercase;
+                        background-color: $white;
+                        cursor: pointer;
+                        border-radius:5px;
+                        i{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ------------------------- /hero-style ------------------------- */
+
+/* ------------------------- heroAbout-style ------------------------- */
+.heroAbout{
+    position: relative;
+    padding-top: 100px;
+}
+/* ------------------------- /heroAbout-style ------------------------- */

@@ -68,6 +68,35 @@
         }
     }
 
+    .home_hero{
+        .homeHero-container{
+            .hero-item{
+                .hero-img{
+                    .hero-info{
+                        h1{
+                            font-size: 5rem;
+                        }
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+            .hero-item-2{
+                .hero-img-2{
+                    .hero-info{
+                        .heading{
+                            font-size: 5rem;
+                        }
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .studies{
         .studies-title{
             text-align: center;
@@ -121,6 +150,39 @@
                 .nav-menu {
                     gap: 30px;
                     padding: 30px 20px;
+                }
+            }
+        }
+    }
+
+    .home_hero{
+        .homeHero-container{
+            .hero-item{
+                .hero-img{
+                    .hero-info{
+                        h1{
+                            font-size: 4rem;
+                            width: 80%;
+                        }
+                        p{
+                            font-size: 1.6rem;
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+            .hero-item-2{
+                .hero-img-2{
+                    .hero-info{
+                        .heading{
+                            font-size: 4rem;
+                            width: 90%;
+                        }
+                        p{
+                            font-size: 1.6rem;
+                            width: 90%;
+                        }
+                    }
                 }
             }
         }
@@ -298,6 +360,50 @@
 
                     a {
                         font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .home_hero{
+        .homeHero-container{
+            .hero-item{
+                .hero-img{
+                    .hero-info{
+                        top: 40%;
+                        padding: 0 12px;
+                        h1{
+                            font-size: 3.2rem;
+                            width: 100%;
+                        }
+                        .heading{
+                            font-size: 3.2rem;
+                            width: 100%;
+                        }
+                        p{
+                            font-size: 1.4rem;
+                            width: 95%;
+                        }
+                        .hero-btn{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+            .hero-item-2{
+                .hero-img-2{
+                    .hero-info{
+                        padding: 0 12px;
+                        top: 40%;
+                        .heading{
+                            font-size: 3.2rem;
+                            width: 100%;
+                        }
+                        p{
+                            font-size: 1.4rem;
+                            width: 95%;
+                        }
                     }
                 }
             }
@@ -629,6 +735,48 @@
                 .hamburger {
                     .line {
                         width: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .home_hero{
+        .homeHero-container{
+            .hero-item{
+                .hero-img{
+                    .hero-info{
+                        padding: 0 12px;
+                        top: 35%;
+                        h1{
+                            font-size: 2.8rem;
+                        }
+                        p{
+                            font-size: 1.3rem;
+                            width: 95%;
+                        }
+                        .hero-btn{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+            .hero-item-2{
+                .hero-img-2{
+                    .hero-info{
+                        padding: 0 12px;
+                        top: 35%;
+                        .heading{
+                            font-size: 2.8rem;
+                            width: 100%;
+                        }
+                        p{
+                            font-size: 1.3rem;
+                            width: 95%;
+                        }
+                        .hero-btn{
+                            font-size: 1.2rem;
+                        }
                     }
                 }
             }
