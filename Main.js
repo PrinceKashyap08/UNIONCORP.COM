@@ -1,3 +1,10 @@
+// Pre Loader  
+const preloader = document.getElementById("loader");
+
+function myLoder(){
+    preloader.style.display = "none";
+};
+
 // hamburger 
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
