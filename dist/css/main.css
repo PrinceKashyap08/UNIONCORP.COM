@@ -306,8 +306,8 @@ a {
 .Services {
   width: 100%;
   height: auto;
-  padding-top: 100px;
-  background: #f9faff;
+  padding: 120px 0;
+  background: #f4f6ff;
 }
 .Services .Services-title {
   max-width: 1320px;
@@ -335,6 +335,41 @@ a {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.8);
   padding-bottom: 50px;
+}
+.Services .Services-container {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 30px;
+}
+.Services .Services-container .service-items .services-icons {
+  width: 120px;
+  margin: auto;
+  height: 120px;
+  display: grid;
+  place-items: center;
+  background-color: #f9faff;
+  box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.Services .Services-container .service-items .services-icons img {
+  width: 60px;
+}
+.Services .Services-container .service-items .services-info {
+  padding-top: 20px;
+}
+.Services .Services-container .service-items .services-info h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+.Services .Services-container .service-items .services-info p {
+  padding-top: 10px;
+  font-size: 1.6rem;
+  color: #8c8c8c;
 }
 
 /* ----------------- Studies_style ------------------ */
@@ -1319,6 +1354,12 @@ a {
   .home_hero .homeHero-container .hero-item-2 .hero-img-2 .hero-info p {
     font-size: 1.6rem;
   }
+  .Services .Services-title h2 {
+    font-size: 3.2rem;
+  }
+  .Services .Services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .studies .studies-title {
     text-align: center;
     padding: 0 20px;
@@ -1374,6 +1415,16 @@ a {
   .home_hero .homeHero-container .hero-item-2 .hero-img-2 .hero-info p {
     font-size: 1.6rem;
     width: 90%;
+  }
+  .Services .Services-title {
+    padding: 0 20px;
+  }
+  .Services .Services-title h2 {
+    font-size: 3.2rem;
+  }
+  .Services .Services-container {
+    padding: 0 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
   .studies .studies-title {
     text-align: center;
@@ -1516,6 +1567,27 @@ a {
   .home_hero .homeHero-container .hero-item-2 .hero-img-2 .hero-info p {
     font-size: 1.4rem;
     width: 95%;
+  }
+  .Services .Services-title {
+    padding: 0 20px;
+  }
+  .Services .Services-title h3 {
+    font-size: 1.4rem;
+  }
+  .Services .Services-title h2 {
+    font-size: 2.5rem;
+  }
+  .Services .Services-container {
+    padding: 0 12px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .Services .Services-container .service-items .services-info h3 {
+    font-size: 2rem;
+  }
+  .Services .Services-container .service-items .services-info p {
+    font-size: 1.4rem;
+    width: 90%;
+    margin: auto;
   }
   .studies .studies-title {
     padding: 0 12px;
@@ -1740,6 +1812,26 @@ a {
   }
   .home_hero .homeHero-container .hero-item-2 .hero-img-2 .hero-info .hero-btn {
     font-size: 1.2rem;
+  }
+  .Services .Services-title {
+    padding: 0 20px;
+  }
+  .Services .Services-title h3 {
+    font-size: 1.2rem;
+  }
+  .Services .Services-title h2 {
+    font-size: 2rem;
+  }
+  .Services .Services-container {
+    padding: 0 12px;
+  }
+  .Services .Services-container .service-items .services-info h3 {
+    font-size: 1.8rem;
+  }
+  .Services .Services-container .service-items .services-info p {
+    font-size: 1.2rem;
+    width: 90%;
+    margin: auto;
   }
   .studies .studies-title {
     text-align: center;
