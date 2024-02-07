@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/dist/css/main.css">
     <title>Unicorn.com</title>
 </head>
-<body>
+<body onload="myLoder()">
+    <div id="loader">
+        <img src="/image/Spinner-5.gif" alt="spinner">
+    </div>
     <!-- ----------------- header_section ------------------ -->
     <header class="header">
         <div class="header_top_wrapper">
@@ -75,13 +79,13 @@
 
         <!-- ----------------- Studies_section ------------------ -->
         <section class="studies">
-            <div class="studies-title">
+            <div class="studies-title" data-aos="fade-up" data-aos-delay="10" data-aos-duration="800">
                 <h3>CASE STUDIES</h3>
                 <h2>We Take Every Case <br> Studies Very Seriously</h2>
             </div>
             <div class="studies-container">
                 <div class="studies-items">
-                    <div class="studies-img">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease">
                         <img src="/image/image_2.jpg" alt="studies image">
                         <div class="studies-overlay">
                             <div class="studies-icon">
@@ -94,7 +98,7 @@
                     </div>
                 </div>
                 <div class="studies-items">
-                    <div class="studies-img">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="40" data-aos-duration="2000" data-aos-easing="ease">
                         <img src="/image/gallery-1.jpg" alt="studies image">
                         <div class="studies-overlay">
                             <div class="studies-icon">
@@ -107,7 +111,7 @@
                     </div>
                 </div>
                 <div class="studies-items">
-                    <div class="studies-img">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="60" data-aos-duration="3000" data-aos-easing="ease">
                         <img src="/image/gallery-3.jpg" alt="studies image">
                         <div class="studies-overlay">
                             <div class="studies-icon">
@@ -120,7 +124,7 @@
                     </div>
                 </div>
                 <div class="studies-items">
-                    <div class="studies-img">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="80" data-aos-duration="4000" data-aos-easing="ease">
                         <img src="/image/gallery-4.jpg" alt="studies image">
                         <div class="studies-overlay">
                             <div class="studies-icon">
@@ -133,7 +137,7 @@
                     </div>
                 </div>
                 <div class="studies-items">
-                    <div class="studies-img">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="100" data-aos-duration="5000" data-aos-easing="ease">
                         <img src="/image/gallery-5.jpg" alt="studies image">
                         <div class="studies-overlay">
                             <div class="studies-icon">
@@ -146,7 +150,7 @@
                     </div>
                 </div>
                 <div class="studies-items">
-                    <div class="studies-img">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="120" data-aos-duration="6000" data-aos-easing="ease">
                         <img src="/image/gallery-6.jpg" alt="studies image">
                         <div class="studies-overlay">
                             <div class="studies-icon">
@@ -159,7 +163,7 @@
                     </div>
                 </div>
                 <div class="studies-items">
-                    <div class="studies-img">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="140" data-aos-duration="8000" data-aos-easing="ease">
                         <img src="/image/gallery-7.jpg" alt="studies image">
                         <div class="studies-overlay">
                             <div class="studies-icon">
@@ -172,7 +176,7 @@
                     </div>
                 </div>
                 <div class="studies-items">
-                    <div class="studies-img">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="160" data-aos-duration="9000" data-aos-easing="ease">
                         <img src="/image/gallery-8.jpg" alt="studies image">
                         <div class="studies-overlay">
                             <div class="studies-icon">
@@ -207,11 +211,11 @@
         <!-- ----------------- Prepare_section ------------------ -->
         <section class="Prepare">
             <div class="Prepare-container">
-                <div class="prepareLeft">
+                <div class="prepareLeft" data-aos="fade-up" data-aos-delay="60" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <h4>PREPARE FOR TAKEOFF</h4>
                     <p>Looking for business opportunity?</p>
                 </div>
-                <div class="prepareRight">
+                <div class="prepareRight" data-aos="fade-up" data-aos-delay="70" data-aos-duration="2000" data-aos-easing="ease-in-out">
                     <a href="#" class="prepare-btn">GET Started</a>
                 </div>
             </div>
@@ -267,12 +271,12 @@
                         <h3>Recent Posts</h3>
                     </div>
                     <ul>
-                        <span><img src="/image/image_1.jpg" alt=""></span>
+                        <span><img src="/image/image_1.jpg" alt="footer-image"></span>
                         <li>
                             <div><i class="fa fa-calendar"></i> Jan 27, 2024 <i class="fa fa-user"></i> Admin</div>
                             <p>Incorporation is a big milestone for business</p>
                         </li>
-                        <span><img src="/image/image_2.jpg" alt=""></span>
+                        <span><img src="/image/image_2.jpg" alt="footer-image"></span>
                         <li>
                             <div><i class="fa fa-calendar"></i> Jan 27, 2024 <i class="fa fa-user"></i> Admin</div>
                             <p>Incorporation is a big milestone for business</p>
@@ -309,6 +313,7 @@
     <!-- ----------------- /footer_section ------------------ -->
 
     <script src="https://kit.fontawesome.com/edcd5c8c16.js"></script>
-    <script src="Main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="work.js"></script>
 </body>
 </html>

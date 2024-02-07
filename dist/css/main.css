@@ -303,6 +303,42 @@ a {
 
 /* ------------------------- /heroAbout-style ------------------------- */
 /* ----------------- Studies_style ------------------ */
+.Services {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  background: #f9faff;
+}
+.Services .Services-title {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.Services .Services-title h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.Services .Services-title h2 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 50px;
+}
+
+/* ----------------- Studies_style ------------------ */
+/* ----------------- Studies_style ------------------ */
 .studies {
   width: 100%;
   height: auto;

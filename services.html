@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/dist/css/main.css">
     <title>Unicorn.com</title>
 </head>
-<body>
+<body onload="myLoder()">
+    <div id="loader">
+        <img src="/image/Spinner-5.gif" alt="spinner">
+    </div>
     <!-- ----------------- header_section ------------------ -->
     <header class="header">
         <div class="header_top_wrapper">
@@ -73,136 +77,17 @@
         </div>
         <!-- ----------------- /Contact_hero_section ------------------ -->
 
-        <!-- ----------------- Studies_section ------------------ -->
-        <section class="studies">
-            <div class="studies-title">
-                <h3>CASE STUDIES</h3>
-                <h2>We Take Every Case <br> Studies Very Seriously</h2>
+        <!-- ----------------- Services_section ------------------ -->
+        <section class="Services">
+            <div class="Services-title" data-aos="fade-up" data-aos-delay="10" data-aos-duration="800">
+                <h3>SERVICES</h3>
+                <h2>Our Exclusive Services We <br> Offer For You</h2>
             </div>
-            <div class="studies-container">
-                <div class="studies-items">
-                    <div class="studies-img">
-                        <img src="/image/image_2.jpg" alt="studies image">
-                        <div class="studies-overlay">
-                            <div class="studies-icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <div class="studies-paragraph">
-                                <p>Business Finance <br> Consulting</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="studies-items">
-                    <div class="studies-img">
-                        <img src="/image/gallery-1.jpg" alt="studies image">
-                        <div class="studies-overlay">
-                            <div class="studies-icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <div class="studies-paragraph">
-                                <p>Business Finance <br> Consulting</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="studies-items">
-                    <div class="studies-img">
-                        <img src="/image/gallery-3.jpg" alt="studies image">
-                        <div class="studies-overlay">
-                            <div class="studies-icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <div class="studies-paragraph">
-                                <p>Business Finance <br> Consulting</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="studies-items">
-                    <div class="studies-img">
-                        <img src="/image/gallery-4.jpg" alt="studies image">
-                        <div class="studies-overlay">
-                            <div class="studies-icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <div class="studies-paragraph">
-                                <p>Business Finance <br> Consulting</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="studies-items">
-                    <div class="studies-img">
-                        <img src="/image/gallery-5.jpg" alt="studies image">
-                        <div class="studies-overlay">
-                            <div class="studies-icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <div class="studies-paragraph">
-                                <p>Business Finance <br> Consulting</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="studies-items">
-                    <div class="studies-img">
-                        <img src="/image/gallery-6.jpg" alt="studies image">
-                        <div class="studies-overlay">
-                            <div class="studies-icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <div class="studies-paragraph">
-                                <p>Business Finance <br> Consulting</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="studies-items">
-                    <div class="studies-img">
-                        <img src="/image/gallery-7.jpg" alt="studies image">
-                        <div class="studies-overlay">
-                            <div class="studies-icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <div class="studies-paragraph">
-                                <p>Business Finance <br> Consulting</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="studies-items">
-                    <div class="studies-img">
-                        <img src="/image/gallery-8.jpg" alt="studies image">
-                        <div class="studies-overlay">
-                            <div class="studies-icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <div class="studies-paragraph">
-                                <p>Business Finance <br> Consulting</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="Services-container">
+              
             </div>
         </section>
-        <!-- ----------------- /Studies_section ------------------ -->
-
-        <!-- ----------------- studiesLink_section ------------------ -->
-        <section class="studiesPagition">
-            <div class="studies-Link">
-                <ul>
-                    <li><i class="fa fa-angle-left"></i></li>
-                    <li class="active">1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li><i class="fa fa-angle-right"></i></li>
-                </ul>
-            </div>
-        </section>
-        <!-- ----------------- /studiesLink_section ------------------ -->
+        <!-- ----------------- /servies_section ------------------ -->
 
         <!-- ----------------- Prepare_section ------------------ -->
         <section class="Prepare">
@@ -267,12 +152,12 @@
                         <h3>Recent Posts</h3>
                     </div>
                     <ul>
-                        <span><img src="/image/image_1.jpg" alt=""></span>
+                        <span><img src="/image/image_1.jpg" alt="footer-image"></span>
                         <li>
                             <div><i class="fa fa-calendar"></i> Jan 27, 2024 <i class="fa fa-user"></i> Admin</div>
                             <p>Incorporation is a big milestone for business</p>
                         </li>
-                        <span><img src="/image/image_2.jpg" alt=""></span>
+                        <span><img src="/image/image_2.jpg" alt="footer-image"></span>
                         <li>
                             <div><i class="fa fa-calendar"></i> Jan 27, 2024 <i class="fa fa-user"></i> Admin</div>
                             <p>Incorporation is a big milestone for business</p>
@@ -309,6 +194,7 @@
     <!-- ----------------- /footer_section ------------------ -->
 
     <script src="https://kit.fontawesome.com/edcd5c8c16.js"></script>
-    <script src="Main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="services.js"></script>
 </body>
 </html>
