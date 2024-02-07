@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/dist/css/main.css">
     <title>Unicorn.com</title>
 </head>
-<body>
+<body onload="myLoder()">
+    <div id="loader">
+        <img src="/image/Spinner-5.gif" alt="spinner">
+    </div>
     <!-- ----------------- header_section ------------------ -->
     <header class="header">
         <div class="header_top_wrapper">
@@ -77,9 +81,9 @@
         <div class="BlogContent">
             <div class="Blog-container">
                 <div class="BlogContent">
-                    <div class="BlogContent-items">
+                    <div class="BlogContent-items" data-aos="fade-up" data-aos-delay="10" data-aos-duration="800">
                         <div class="Blog-img">
-                            <img src="/image/image_1.jpg" alt="">
+                            <img src="/image/image_1.jpg" alt="blog-section-image">
                         </div>
                         <div class="Blog-info">
                             <div class="blog-box">
@@ -95,9 +99,9 @@
                             <a href="#" class="blog-btn">Read More</a>
                         </div>
                     </div>
-                    <div class="BlogContent-items">
+                    <div class="BlogContent-items" data-aos="fade-up" data-aos-delay="15" data-aos-duration="800">
                         <div class="Blog-img">
-                            <img src="/image/image_2.jpg" alt="">
+                            <img src="/image/image_2.jpg" alt="blog-section-image">
                         </div>
                         <div class="Blog-info">
                             <div class="blog-box">
@@ -113,9 +117,9 @@
                             <a href="#" class="blog-btn">Read More</a>
                         </div>
                     </div>
-                    <div class="BlogContent-items">
+                    <div class="BlogContent-items" data-aos="fade-up" data-aos-delay="20" data-aos-duration="800">
                         <div class="Blog-img">
-                            <img src="/image/image_3.jpg" alt="">
+                            <img src="/image/image_3.jpg" alt="blog-section-image">
                         </div>
                         <div class="Blog-info">
                             <div class="blog-box">
@@ -131,9 +135,9 @@
                             <a href="#" class="blog-btn">Read More</a>
                         </div>
                     </div>
-                    <div class="BlogContent-items">
+                    <div class="BlogContent-items" data-aos="fade-up" data-aos-delay="25" data-aos-duration="800">
                         <div class="Blog-img">
-                            <img src="/image/image_4.jpg" alt="">
+                            <img src="/image/image_4.jpg" alt="blog-section-image">
                         </div>
                         <div class="Blog-info">
                             <div class="blog-box">
@@ -149,9 +153,9 @@
                             <a href="#" class="blog-btn">Read More</a>
                         </div>
                     </div>
-                    <div class="BlogContent-items">
+                    <div class="BlogContent-items" data-aos="fade-up" data-aos-delay="30" data-aos-duration="800">
                         <div class="Blog-img">
-                            <img src="/image/image_5.jpg" alt="">
+                            <img src="/image/image_5.jpg" alt="blog-section-image">
                         </div>
                         <div class="Blog-info">
                             <div class="blog-box">
@@ -167,9 +171,9 @@
                             <a href="#" class="blog-btn">Read More</a>
                         </div>
                     </div>
-                    <div class="BlogContent-items">
+                    <div class="BlogContent-items" data-aos="fade-up" data-aos-delay="35" data-aos-duration="800">
                         <div class="Blog-img">
-                            <img src="/image/image_6.jpg" alt="">
+                            <img src="/image/image_6.jpg" alt="blog-section-image">
                         </div>
                         <div class="Blog-info">
                             <div class="blog-box">
@@ -186,15 +190,17 @@
                         </div>
                     </div>
                     <div class="blog-pagination">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
-                            <li><a href="#" class="active">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                        </ul>
+                        <div class="blog-paginationLink">
+                            <ul>
+                                <li><i class="fa fa-angle-left"></i></li>
+                                <li class="active">1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li><i class="fa fa-angle-right"></i></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="BlogAside">
@@ -223,7 +229,7 @@
                         <div class="blog-container">
                             <div class="blog-recent-box">
                                 <div class="blog-recent-left">
-                                    <img src="/image/image_1.jpg" alt="">
+                                    <img src="/image/image_1.jpg" alt="blog-section-image">
                                 </div>
                                 <div class="blog-recent-right">
                                     <div class="blog-recent-items">
@@ -238,7 +244,7 @@
                             </div>
                             <div class="blog-recent-box">
                                 <div class="blog-recent-left">
-                                    <img src="/image/image_2.jpg" alt="">
+                                    <img src="/image/image_2.jpg" alt="blog-section-image">
                                 </div>
                                 <div class="blog-recent-right">
                                     <div class="blog-recent-items">
@@ -253,7 +259,7 @@
                             </div>
                             <div class="blog-recent-box">
                                 <div class="blog-recent-left">
-                                    <img src="/image/image_3.jpg" alt="">
+                                    <img src="/image/image_3.jpg" alt="blog-section-image">
                                 </div>
                                 <div class="blog-recent-right">
                                     <div class="blog-recent-items">
@@ -354,12 +360,12 @@
                         <h3>Recent Posts</h3>
                     </div>
                     <ul>
-                        <span><img src="/image/image_1.jpg" alt=""></span>
+                        <span><img src="/image/image_1.jpg" alt="footer-image"></span>
                         <li>
                             <div><i class="fa fa-calendar"></i> Jan 27, 2024 <i class="fa fa-user"></i> Admin</div>
                             <p>Incorporation is a big milestone for business</p>
                         </li>
-                        <span><img src="/image/image_2.jpg" alt=""></span>
+                        <span><img src="/image/image_2.jpg" alt="footer-image"></span>
                         <li>
                             <div><i class="fa fa-calendar"></i> Jan 27, 2024 <i class="fa fa-user"></i> Admin</div>
                             <p>Incorporation is a big milestone for business</p>
@@ -396,6 +402,7 @@
     <!-- ----------------- /footer_section ------------------ -->
 
     <script src="https://kit.fontawesome.com/edcd5c8c16.js"></script>
-    <script src="Main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="blog.js"></script>
 </body>
 </html>

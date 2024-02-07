@@ -413,6 +413,9 @@ a {
   padding: 50px 0;
 }
 .studiesPagition .studies-Link ul {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -640,7 +643,10 @@ a {
   padding-top: 20px;
   justify-self: center;
 }
-.BlogContent .Blog-container .BlogContent .blog-pagination ul {
+.BlogContent .Blog-container .BlogContent .blog-pagination .blog-paginationLink ul {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -649,32 +655,21 @@ a {
       align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 5px;
+  gap: 8px;
+  padding-bottom: 50px;
 }
-.BlogContent .Blog-container .BlogContent .blog-pagination ul li {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  transition: 0.4s;
+.BlogContent .Blog-container .BlogContent .blog-pagination .blog-paginationLink ul li {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: #8c8c8c;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
-.BlogContent .Blog-container .BlogContent .blog-pagination ul li a {
-  font-size: 1.4rem;
-  display: grid;
-  place-items: center;
-  color: #ffffff;
-  color: #000;
-  transition: 0.4s ease;
-  width: 40px;
-  height: 40px;
-}
-.BlogContent .Blog-container .BlogContent .blog-pagination ul li a:hover {
+.BlogContent .Blog-container .BlogContent .blog-pagination .blog-paginationLink ul li:hover, .BlogContent .Blog-container .BlogContent .blog-pagination .blog-paginationLink ul li.active {
   color: #ffffff;
   background-color: #4f86f9;
-}
-.BlogContent .Blog-container .BlogContent .blog-pagination ul li a.active {
-  color: #ffffff;
-  background-color: #4f86f9;
-}
-.BlogContent .Blog-container .BlogContent .blog-pagination ul li a i {
-  font-size: 1.4rem;
 }
 .BlogContent .Blog-container .BlogAside {
   padding-top: 50px;

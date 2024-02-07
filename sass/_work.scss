@@ -110,6 +110,7 @@
     padding: 50px  0;
     .studies-Link{
         ul{
+            @include max-width2;
             display: flex;
             justify-content: center;
             align-items: center;

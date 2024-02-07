@@ -86,42 +86,28 @@
             .blog-pagination {
                 padding-top: 20px;
                 justify-self: center;
-
-                ul {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    gap: 5px;
-
-                    li {
-                        border: 1px solid rgba(0, 0, 0, 0.3);
-                        transition: 0.4s;
-
-                        a {
-                            font-size: 1.4rem;
-                            display: grid;
-                            place-items: center;
-                            color: $white;
-                            color: #000;
-                            transition: 0.4s ease;
-                            width: 40px;
-                            height: 40px;
-
-                            &:hover {
+                .blog-paginationLink{
+                    ul{
+                        @include max-width2;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        gap: 8px;
+                        padding-bottom: 50px;
+                        li{
+                            padding: 8px 16px;
+                            border: 1px solid #ccc;
+                            background-color: transparent;
+                            font-size: 1.6rem;
+                            color: #8c8c8c;
+                            transition: all 0.5s ease;
+                            cursor: pointer;
+                            &:hover,
+                            &.active{
                                 color: $white;
                                 background-color: $Primary;
                             }
-
-                            &.active {
-                                color: $white;
-                                background-color: $Primary;
-                            }
-
-                            i {
-                                font-size: 1.4rem;
-                            }
-
                         }
                     }
                 }
