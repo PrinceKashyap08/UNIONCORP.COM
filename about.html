@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/dist/css/main.css">
-    <title>Document</title>
+    <title>Unicorn.in</title>
 </head>
-<body>
-     <!-- ----------------- header_section ------------------ -->
-     <header class="header">
+
+<body onload="myLoder()">
+    <div id="loader">
+        <img src="/image/Spinner-5.gif" alt="spinner">
+    </div>
+    <!-- ----------------- header_section ------------------ -->
+    <header class="header">
         <div class="header_top_wrapper">
             <div class="header_box">
                 <div class="header_time">
                     <p><i class="fa fa-calendar"></i> Monday - Friday 8:00AM-8:00PM</p>
                 </div>
                 <div class="header_time">
-                    <p><i class="fa fa-mobile"></i>  Call Us: +2 392 3929 210</p>
+                    <p><i class="fa fa-mobile"></i> Call Us: +2 392 3929 210</p>
                 </div>
                 <div class="header_time">
-                    <p><i class="fa fa-map-o"></i>  Location: San Francisco, California, USA</p>
+                    <p><i class="fa fa-map-o"></i> Location: San Francisco, California, USA</p>
                 </div>
                 <div class="header_icon">
                     <ul>
@@ -38,8 +44,8 @@
                     </a>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="work.html">Work</a></li>
                     <li><a href="Pricing.html">Pricing</a></li>
@@ -51,12 +57,151 @@
                     <div class="line"></div>
                     <div class="line"></div>
                 </div>
-            </nav>    
+            </nav>
         </div>
     </header>
     <!-- ----------------- /header_section ------------------ -->
 
+    <main>
+        <!-- ----------------- Contact_hero_section ------------------ -->
+        <div class="contact_hero">
+            <div class="contact_hero_container">
+                <div class="contact_hero_wrapper">
+                    <div class="contact-hero-box">
+                        <ul>
+                            <li><a href="index.html">Home <i class="fa fa-angle-right "></i></a></li>
+                            <li>About Us <i class="fa fa-angle-right "></i></li>
+                        </ul>
+                        <p>About Us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------- /Contact_hero_section ------------------ -->
+
+        <!-- ----------------- AboutUs_section ------------------ -->
+        <section class="AboutUs">
+            <div class="AboutUs-container">
+                <div class="AboutUs-left">
+                    <img src="/image/about.jpg" alt="About-image">
+                </div>
+                <div class="AboutUs-Right">
+                    <h3>ABOUT UNION CORPORATION</h3>
+                    <h2>More than 40M+ Trusted Our Financial & Conusultation Institution</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <button type="button" class="AboutUs-btn">LEARN MORE</button>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------- /AboutUs_section ------------------ -->
+
+        <!-- ----------------- Team_section ------------------ -->
+        <section class="team">
+            <div class="team-title">
+                <h3>MEET OUR BRILLIANT MINDS</h3>
+                <h2>Our Leadership Team</h2>
+            </div>
+            <div class="team-container">
+            </div>
+        </section>
+        <!-- ----------------- /Team_section ------------------ -->
+    </main>
+
+    <!-- ----------------- footer_section ------------------ -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-top-wrapper">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <a href="#">
+                            UNin<small>corp.</small>
+                            <span>FINANCE & CONSULTATION</span>
+                        </a>
+                    </div>
+                    <div class="footer-content">
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                        </p>
+                        <div class="foot-icons">
+                            <ul>
+                                <li><i class="fa fa-twitter"></i></li>
+                                <li><i class="fa fa-facebook"></i></li>
+                                <li><i class="fa fa-instagram"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-service">
+                    <div class="footer-title">
+                        <h3>Services</h3>
+                    </div>
+                    <div class="foot-service-links">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> Financial Planning</a></li>
+                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> Investments Management</a></li>
+                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> Business Loan</a></li>
+                            <li><a href="#"><i class="fa fa-long-arrow-right"></i> Taxes Consulting</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-Link">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-long-arrow-right"></i> insurance Consulting</a></li>
+                        <li><a href="#"><i class="fa fa-long-arrow-right"></i> Retirement Planning</a></li>
+                        <li><a href="#"><i class="fa fa-long-arrow-right"></i> Risk Management</a></li>
+                        <li><a href="#"><i class="fa fa-long-arrow-right"></i> Technology Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-post">
+                    <div class="footer-title">
+                        <h3>Recent Posts</h3>
+                    </div>
+                    <ul>
+                        <span><img src="/image/image_1.jpg" alt="footer-image"></span>
+                        <li>
+                            <div><i class="fa fa-calendar"></i> Jan 27, 2024 <i class="fa fa-user"></i> Admin</div>
+                            <p>Incorporation is a big milestone for business</p>
+                        </li>
+                        <span><img src="/image/image_2.jpg" alt="footer-image"></span>
+                        <li>
+                            <div><i class="fa fa-calendar"></i> Jan 27, 2024 <i class="fa fa-user"></i> Admin</div>
+                            <p>Incorporation is a big milestone for business</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-title">
+                        <h3>Have a Questions?</h3>
+                    </div>
+                    <ul>
+                        <span><i class="fa fa-map-o"></i></span>
+                        <li>
+                            203 Fake St. Mountain View, San Francisco, California, USA
+                        </li>
+                        <span><i class="fa fa-mobile"></i></span>
+                        <li>
+                            +2 392 3929 210
+                        </li>
+                        <span><i class="fa fa-paper-plane"></i></span>
+                        <li>
+                            info@yourdomain.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>Copyright ©<span class="currentYear"></span> All rights reserved | This template is made with <i
+                        class="fa fa-heart"></i> by Prince Kashyap</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ----------------- /footer_section ------------------ -->
+
     <script src="https://kit.fontawesome.com/edcd5c8c16.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="Main.js"></script>
 </body>
+
 </html>

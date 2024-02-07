@@ -302,6 +302,163 @@ a {
 }
 
 /* ------------------------- /heroAbout-style ------------------------- */
+/* --------------------- AboutUs.style ----------------------------- */
+.AboutUs {
+  width: 100%;
+  height: auto;
+  background: #f9faff;
+  padding-bottom: 80px;
+}
+.AboutUs .AboutUs-container {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+.AboutUs .AboutUs-container .AboutUs-left {
+  height: 600px;
+}
+.AboutUs .AboutUs-container .AboutUs-left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.AboutUs .AboutUs-container .AboutUs-Right {
+  padding-top: 80px;
+}
+.AboutUs .AboutUs-container .AboutUs-Right h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.AboutUs .AboutUs-container .AboutUs-Right h2 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+.AboutUs .AboutUs-container .AboutUs-Right p {
+  padding-top: 20px;
+  font-size: 1.6rem;
+  color: #8c8c8c;
+}
+.AboutUs .AboutUs-container .AboutUs-Right .AboutUs-btn {
+  margin-top: 30px;
+  padding: 14px 28px;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4f86f9;
+}
+
+/* --------------------- /AboutUs-style ----------------------------- */
+/* --------------------- Team-style ----------------------------- */
+.team {
+  width: 100%;
+  height: auto;
+  padding: 120px 0;
+  background: #f9faff;
+}
+.team .team-title {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+}
+.team .team-title h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.team .team-title h2 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+.team .team-container {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 30px;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 600px 600px;
+  gap: 30px;
+  text-align: center;
+}
+.team .team-container .team-items {
+  box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.01);
+}
+.team .team-container .team-items .team-img {
+  position: relative;
+  z-index: 10;
+}
+.team .team-container .team-items .team-img img {
+  width: 100%;
+  height: 100%;
+}
+.team .team-container .team-items .team-info {
+  top: -100px;
+  position: relative;
+  background-color: #ffffff;
+  padding-top: 120px;
+}
+.team .team-container .team-items .team-info h3 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.team .team-container .team-items .team-info h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #4f86f9;
+}
+.team .team-container .team-items .team-info .team-icons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 5px;
+  padding: 20px 0;
+}
+.team .team-container .team-items .team-info .team-icons li {
+  width: 40px;
+  height: 40px;
+  background-color: #4f86f9;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+.team .team-container .team-items .team-info .team-icons li i {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.team .team-container .team-items .team-info p {
+  font-size: 1.6rem;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+/* --------------------- /Team-style ----------------------------- */
 /* ----------------- Studies_style ------------------ */
 .Services {
   width: 100%;
@@ -1416,6 +1573,26 @@ a {
     font-size: 1.6rem;
     width: 90%;
   }
+  .AboutUs .AboutUs-container {
+    padding: 0 20px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right {
+    padding-top: 30px;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right h3 {
+    font-size: 1.4rem;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right h2 {
+    font-size: 3.5rem;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right p {
+    font-size: 1.6rem;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right .AboutUs-btn {
+    font-size: 1.5rem;
+  }
   .Services .Services-title {
     padding: 0 20px;
   }
@@ -1567,6 +1744,26 @@ a {
   .home_hero .homeHero-container .hero-item-2 .hero-img-2 .hero-info p {
     font-size: 1.4rem;
     width: 95%;
+  }
+  .AboutUs .AboutUs-container {
+    padding: 0 12px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right {
+    padding-top: 30px;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right h3 {
+    font-size: 1.4rem;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right h2 {
+    font-size: 2.5rem;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right p {
+    font-size: 1.4rem;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right .AboutUs-btn {
+    font-size: 1.4rem;
   }
   .Services .Services-title {
     padding: 0 20px;
@@ -1811,6 +2008,26 @@ a {
     width: 95%;
   }
   .home_hero .homeHero-container .hero-item-2 .hero-img-2 .hero-info .hero-btn {
+    font-size: 1.2rem;
+  }
+  .AboutUs .AboutUs-container {
+    padding: 0 12px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right {
+    padding-top: 30px;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right h3 {
+    font-size: 1.2rem;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right h2 {
+    font-size: 2rem;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right p {
+    font-size: 1.2rem;
+  }
+  .AboutUs .AboutUs-container .AboutUs-Right .AboutUs-btn {
     font-size: 1.2rem;
   }
   .Services .Services-title {

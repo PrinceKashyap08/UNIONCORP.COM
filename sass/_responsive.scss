@@ -199,6 +199,29 @@
         }
     }
 
+    .AboutUs{
+        .AboutUs-container{
+            padding: 0 20px;
+            grid-template-columns: repeat(1,1fr);
+            gap: 10px;
+            .AboutUs-Right{
+                padding-top: 30px;
+                h3{
+                    font-size: 1.4rem;
+                }
+                h2{
+                    font-size: 3.5rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                }
+                .AboutUs-btn{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
     .Services{
         .Services-title{
             padding: 0 20px;
@@ -429,6 +452,29 @@
                             width: 95%;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .AboutUs{
+        .AboutUs-container{
+            padding: 0 12px;
+            grid-template-columns: repeat(1,1fr);
+            gap: 10px;
+            .AboutUs-Right{
+                padding-top: 30px;
+                h3{
+                    font-size: 1.4rem;
+                }
+                h2{
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 1.4rem;
+                }
+                .AboutUs-btn{
+                    font-size: 1.4rem;
                 }
             }
         }
@@ -830,6 +876,29 @@
                             font-size: 1.2rem;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .AboutUs{
+        .AboutUs-container{
+            padding: 0 12px;
+            grid-template-columns: repeat(1,1fr);
+            gap: 10px;
+            .AboutUs-Right{
+                padding-top: 30px;
+                h3{
+                    font-size: 1.2rem;
+                }
+                h2{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+                .AboutUs-btn{
+                    font-size: 1.2rem;
                 }
             }
         }
