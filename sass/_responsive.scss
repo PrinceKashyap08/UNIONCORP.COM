@@ -1,5 +1,11 @@
 /* ---------------------  max-width 1024px ------------------------- */
 @media (max-width: 1250px) {
+    .team{
+        .team-container{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
     .OurPricing {
         .ourPricing-container {
             grid-template-columns: repeat(2, 1fr);
@@ -199,6 +205,19 @@
         }
     }
 
+    .team{
+        .team-title{
+            h2{
+                font-size: 3.5rem;
+            }
+        }
+        .team-container{
+            padding: 0 20px;
+            padding-top: 50px;
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
     .AboutUs{
         .AboutUs-container{
             padding: 0 20px;
@@ -217,6 +236,87 @@
                 }
                 .AboutUs-btn{
                     font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .testimonial{
+        .testimonial-title{
+            h3{
+                font-size: 1.4rem;
+            }
+            h2{
+                font-size: 3.5rem;
+            }
+        }
+        .testimonial-container{
+            padding: 0 20px;
+            padding-top: 80px;
+        }
+    }
+
+    .Statistics {
+        .statistic-title {
+            padding: 0 20px;
+    
+            h3 {
+                font-size: 1.4rem;
+            }
+    
+            h2 {
+                font-size: 3.5rem;
+            }
+        }
+    
+        .statistic-container {
+            padding: 0 20px;
+            padding-top: 50px;
+            grid-template-columns: repeat(2, 1fr);
+    
+            .stactistic-items {
+                span {
+                    font-size: 4rem;
+                }
+    
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .customer {
+        .customer-container {
+            padding: 0 20px;
+            grid-template-columns: repeat(1, 1fr);
+        
+            .customer-items {
+                h3 {
+                    font-size: 1.4rem;
+                }
+    
+                h2 {
+                    font-size: 3.5rem;
+                }
+    
+                p {
+                    font-size: 1.6rem;
+                }
+    
+                .customer-button {
+                
+                    ul {
+                        li {
+                            i {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+    
+                    p {
+                        font-size: 1.6rem;
+                    }
                 }
             }
         }
@@ -457,6 +557,19 @@
         }
     }
 
+    .team{
+        .team-title{
+            h2{
+                font-size: 2.5rem;
+            }
+        }
+        .team-container{
+            padding: 0 12px;
+            padding-top: 50px;
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
     .AboutUs{
         .AboutUs-container{
             padding: 0 12px;
@@ -474,6 +587,86 @@
                     font-size: 1.4rem;
                 }
                 .AboutUs-btn{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    .testimonial{
+        .testimonial-title{
+            h3{
+                font-size: 1.4rem;
+            }
+            h2{
+                font-size: 2.5rem;
+            }
+        }
+        .testimonial-container{
+            padding: 0 12px;
+            padding-top: 80px;
+        }
+    }
+
+    .customer {
+        .customer-container {
+            padding: 0 12px;
+     
+            .customer-items {
+                h3 {
+                    font-size: 1.4rem;
+                }
+    
+                h2 {
+                    font-size: 2.5rem;
+                }
+    
+                p {
+                    font-size: 1.4rem;
+                }
+    
+                .customer-button {
+                
+                    ul {
+                        li {
+                            i {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+    
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .Statistics {
+        .statistic-title {
+            padding: 0 20px;
+    
+            h3 {
+                font-size: 1.4rem;
+            }
+    
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+    
+        .statistic-container {
+            padding: 0 12px;
+            padding-top: 50px;
+            grid-template-columns: repeat(1, 1fr);
+    
+            .stactistic-items {
+                span {
+                    font-size: 3rem;
+                }
+    
+                p {
                     font-size: 1.4rem;
                 }
             }
@@ -881,6 +1074,32 @@
         }
     }
 
+    .team{
+        .team-title{
+            h2{
+                font-size: 2.5rem;
+            }
+        }
+        .team-container{
+            padding: 0 12px;
+            padding-top: 50px;
+            grid-template-columns: repeat(1,1fr);
+            .team-items{
+                .team-bottom-box {
+                    h3{
+                        font-size: 1.6rem;
+                    }
+                    span{
+                        font-size: 1.4rem;
+                    }
+                    p{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
     .AboutUs{
         .AboutUs-container{
             padding: 0 12px;
@@ -898,6 +1117,104 @@
                     font-size: 1.2rem;
                 }
                 .AboutUs-btn{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .testimonial{
+        .testimonial-title{
+            h3{
+                font-size: 1.2rem;
+            }
+            h2{
+                font-size: 2rem;
+            }
+        }
+        .testimonial-container{
+            padding: 0 12px;
+            padding-top: 80px;
+            .owl-carousel{
+                .testimonial-items{
+                    p{
+                        font-size: 1.4rem;
+                    }
+                    .testimonial-info {
+                        .testimonial-content {
+                            h4 {
+                                font-size: 1.4rem;
+                            }
+                            
+                            p {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .customer {
+        .customer-container {
+            padding: 0 12px;
+     
+            .customer-items {
+                h3 {
+                    font-size: 1.2rem;
+                }
+    
+                h2 {
+                    font-size: 2rem;
+                }
+    
+                p {
+                    font-size: 1.2rem;
+                }
+    
+                .customer-button {
+                
+                    ul {
+                        li {
+                            i {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+    
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .Statistics {
+        .statistic-title {
+            padding: 0 20px;
+    
+            h3 {
+                font-size: 1.2rem;
+            }
+    
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    
+        .statistic-container {
+            padding: 0 12px;
+            padding-top: 50px;
+            grid-template-columns: repeat(1, 1fr);
+    
+            .stactistic-items {
+                span {
+                    font-size: 2.5rem;
+                }
+    
+                p {
                     font-size: 1.2rem;
                 }
             }

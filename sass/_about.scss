@@ -1,41 +1,48 @@
 /* --------------------- AboutUs.style ----------------------------- */
-.AboutUs{
+.AboutUs {
     width: 100%;
     height: auto;
     background: #f9faff;
-    padding-bottom: 80px;
-    .AboutUs-container{
+
+    .AboutUs-container {
         @include max-width;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 50px;
-        .AboutUs-left{
-            height: 600px;
-            img{
+
+        .AboutUs-left {
+            height: 620px;
+
+            img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
         }
-        .AboutUs-Right{
+
+        .AboutUs-Right {
             padding-top: 80px;
-            h3{
+
+            h3 {
                 font-size: 1.4rem;
                 font-weight: 600;
                 padding-bottom: 5px;
                 color: rgba(0, 0, 0, 0.3);
             }
-            h2{
+
+            h2 {
                 font-size: 3.8rem;
                 font-weight: 500;
                 color: #000000cc;
             }
-            p{
+
+            p {
                 padding-top: 20px;
                 font-size: 1.6rem;
                 color: #8c8c8c;
             }
-            .AboutUs-btn{
+
+            .AboutUs-btn {
                 margin-top: 30px;
                 padding: 14px 28px;
                 border: none;
@@ -49,72 +56,361 @@
         }
     }
 }
+
 /* --------------------- /AboutUs-style ----------------------------- */
 
-/* --------------------- Team-style ----------------------------- */
-.team{
+/* --------------------- Testimonial-style ----------------------------- */
+.testimonial {
+    position: relative;
     width: 100%;
     height: auto;
     padding: 120px 0;
-    background: #f9faff;
-    .team-title{
+    background: #f4f6ff;
+
+    .testimonial-title {
         @include max-width;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        h3{
+
+        h3 {
             font-size: 1.4rem;
             font-weight: 600;
             padding-bottom: 5px;
             color: rgba(0, 0, 0, 0.3);
         }
-        h2{
+
+        h2 {
             font-size: 3.8rem;
             font-weight: 500;
             color: #000000cc;
         }
     }
-    .team-container{
+
+    .testimonial-container {
+        position: relative;
+        @include max-width;
+        padding-top: 80px;
+
+        .owl-carousel {
+            position: relative;
+            z-index: 10;
+
+            .testimonial-items {
+                z-index: 10;
+                padding: 10px 20px;
+                background-color: $white;
+                border-radius: 5px;
+
+                p {
+                    padding-top: 30px;
+                    font-size: 1.6rem;
+                }
+
+                .testimonial-info {
+                    padding-bottom: 20px;
+                    padding-top: 30px;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    .testimonial-img {
+                        width: 70px;
+                        height: 70px;
+
+                        img {
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .testimonial-content {
+                        h4 {
+                            font-size: 1.6rem;
+                            font-weight: 500;
+                            color: $Primary;
+                        }
+
+                        p {
+                            font-size: 1.6rem;
+                            font-weight: 500;
+                            color: #8c8c8c;
+                            padding-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 40px;
+    height: 3px;
+    margin: 5px 7px;
+    background: #D6D6D6;
+    display: block;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: $Primary;
+}
+
+/* --------------------- /Testimonial-style ----------------------------- */
+
+/* --------------------- Customer-style ----------------------------- */
+.customer {
+    position: relative;
+    background: url(/image/bg_4.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    padding: 12rem 0;
+
+    .customer-container {
+        @include max-width;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+
+        .customer-items {
+            h3 {
+                font-size: 1.4rem;
+                font-weight: 600;
+                padding-bottom: 5px;
+                color: rgba(0, 0, 0, 0.3);
+            }
+
+            h2 {
+                font-size: 3.8rem;
+                font-weight: 500;
+                color: #000000cc;
+            }
+
+            p {
+                font-size: 1.6rem;
+                padding: 20px 0;
+                color: #8c8c8c;
+            }
+
+            .customer-button {
+                display: flex;
+                gap: 50px;
+                padding-top: 20px;
+
+                ul {
+                    li {
+                        width: 80px;
+                        height: 80px;
+                        background-color: $Primary;
+                        border-radius: 50%;
+                        display: grid;
+                        place-items: center;
+                        animation: pulse 2s infinite;
+
+                        i {
+                            color: $white;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    color: $Primary;
+                }
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(79, 134, 249, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 30px rgba(79, 134, 249, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(79, 134, 249, 0);
+    }
+
+}
+
+/* --------------------- /Customer-style ----------------------------- */
+
+/* --------------------- Statistics-style ----------------------------- */
+.Statistics {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url(/image/bg_3.jpg);
+    background-position: center;
+    padding: 8rem 0;
+    width: 100%;
+
+    .statistics-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $Primary;
+        opacity: 0.9;
+    }
+
+    .statistic-title {
+        @include max-width;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 10000000;
+        position: relative;
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding-bottom: 5px;
+            color: $white;
+        }
+
+        h2 {
+            font-size: 3.8rem;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+
+    .statistic-container {
+        @include max-width;
+        padding-top: 50px;
+        position: relative;
+        z-index: 100;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        text-align: center;
+
+        .stactistic-items {
+            span {
+                font-size: 4rem;
+                font-weight: 600;
+                color: #fff;
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: #f9faff;
+            }
+        }
+    }
+}
+
+/* --------------------- /Statistics-style ----------------------------- */
+
+/* --------------------- Team-style ----------------------------- */
+.team {
+    width: 100%;
+    height: auto;
+    padding: 80px 0;
+    background: #f9faff;
+
+    .team-title {
+        @include max-width;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding-bottom: 5px;
+            color: rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 3.8rem;
+            font-weight: 500;
+            color: #000000cc;
+        }
+    }
+
+    .team-container {
         @include max-width;
         padding-top: 50px;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 600px 600px;
+        grid-template-columns: repeat(4, 1fr);
         gap: 30px;
-        text-align: center;
-        .team-items{
-            box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.01);
-            .team-img{
-                position: relative;
-                z-index: 10;
-                img{
-                    width: 100%;
-                    height: 100%;
+
+        .team-items {
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 0;
+            transition: all 0.3s ease;
+
+            .team-top-box {
+                align-items: stretch !important;
+
+                .team-img {
+                    height: 200px;
+                    width: 200px;
+                    display: block;
+                    background-position: top center;
+                    transition: all 0.3s ease;
+                    position: relative;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    border: 10px solid #f8f9fa;
+                    z-index: 0;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
                 }
             }
-            .team-info{
-                top: -100px;
+
+            .team-bottom-box {
                 position: relative;
-                background-color: $white;
-                padding-top: 120px;
+                background: #fff;
+                padding: 110px 30px 30px 30px;
+                border-radius: 4px;
+                transition: all 0.3s ease;
+                margin-top: -100px;
+                z-index: -1;
+                box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.01);
+                text-align: center;
                 h3{
+                    font-size: 1.8rem;
                     color: #000;
-                    font-size: 2rem;
                     font-weight: 500;
-                    padding-bottom: 5px;
+                    padding-bottom: 2px;
                 }
-                h4{
+                span{
                     font-size: 1.6rem;
                     font-weight: 500;
                     color: $Primary;
                 }
-                .team-icons{
+                ul{
                     display: flex;
                     justify-content: center;
-                    align-items: center;
-                    gap: 5px;
+                    gap: 20px;
                     padding: 20px 0;
                     li{
                         width: 40px;
@@ -124,20 +420,18 @@
                         place-items: center;
                         border-radius: 50%;
                         i{
-                            color: #fff;
                             font-size: 1.4rem;
+                            color: #fff;
                         }
                     }
                 }
                 p{
-                    font-size: 1.6rem;
-                    width: 80%;
-                    margin: auto;
-                    padding-bottom: 30px;
+                    font-size: 1.5rem;
+                    line-height: 1.8;
                 }
-
             }
         }
     }
 }
+
 /* --------------------- /Team-style ----------------------------- */
