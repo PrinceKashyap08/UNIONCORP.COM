@@ -22,43 +22,25 @@ const year = document.querySelector(".currentYear")
 year.innerHTML = new Date().getFullYear();
 
 
-// $('.owl-carousel').owlCarousel({
-//     loop: true,
-//     margin: 0,
-//     nav: false,
-//     dots: false,
-//     autoplay: false,
-//     responsive: {
-//         0: {
-//             items: 1
-//         },
-//         600: {
-//             items: 1
-//         },
-//         1000: {
-//             items: 1
-//         }
-//     }
-// });
-
-$('#testimonial .owl-carousel').owlCarousel({
+$('.owl-carousel').owlCarousel({
     loop: true,
-    margin: 30,
+    margin: 0,
     nav: false,
-    dots: true,
+    dots: false,
     autoplay: false,
     responsive: {
         0: {
             items: 1
         },
         600: {
-            items: 2
+            items: 1
         },
         1000: {
-            items: 3
+            items: 1
         }
     }
 });
+
 
 
 
