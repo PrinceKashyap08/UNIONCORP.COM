@@ -144,6 +144,10 @@ a {
 }
 
 /* ------------------------- /header-style ------------------------- */
+.home-top {
+  padding-bottom: 120px;
+}
+
 /* ------------------------- hero-style ------------------------- */
 .home_hero {
   position: relative;
@@ -296,9 +300,126 @@ a {
 
 /* ------------------------- /hero-style ------------------------- */
 /* ------------------------- heroAbout-style ------------------------- */
-.heroAbout {
+.institution {
   position: relative;
-  padding-top: 100px;
+  padding: 120px 0;
+  background-color: #f4f6ff;
+}
+.institution .institution-container {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 50px;
+}
+.institution .institution-container .institution-left {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.institution .institution-container .institution-left .institution-items:nth-child(1) {
+  padding-top: 20px;
+  padding: 40px;
+  background-color: #4f86f9;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+.institution .institution-container .institution-left .institution-items:nth-child(1) .institution-icons {
+  width: 60px;
+  height: 60px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #e3ecfe;
+  border-radius: 50%;
+}
+.institution .institution-container .institution-left .institution-items:nth-child(1) .institution-icons img {
+  width: 30px;
+}
+.institution .institution-container .institution-left .institution-items:nth-child(1) .institution-info h3 {
+  padding-top: 15px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+.institution .institution-container .institution-left .institution-items:nth-child(1) .institution-info p {
+  padding-top: 15px;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9882352941);
+}
+.institution .institution-container .institution-left .institution-items {
+  padding-top: 20px;
+  padding: 40px;
+  background-color: #fff;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+.institution .institution-container .institution-left .institution-items:hover {
+  background-color: #4f86f9;
+}
+.institution .institution-container .institution-left .institution-items:hover .institution-info h3 {
+  color: #ffffff;
+}
+.institution .institution-container .institution-left .institution-items:hover .institution-info p {
+  color: #ffffff;
+}
+.institution .institution-container .institution-left .institution-items .institution-icons {
+  width: 60px;
+  height: 60px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #e3ecfe;
+  border-radius: 50%;
+}
+.institution .institution-container .institution-left .institution-items .institution-icons img {
+  width: 30px;
+}
+.institution .institution-container .institution-left .institution-items .institution-info h3 {
+  padding-top: 15px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
+}
+.institution .institution-container .institution-left .institution-items .institution-info p {
+  padding-top: 15px;
+  font-size: 1.5rem;
+  color: #8c8c8c;
+}
+.institution .institution-container .institution-right h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #8c8c8c;
+  padding-bottom: 10px;
+}
+.institution .institution-container .institution-right h2 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  color: #000;
+  padding-bottom: 10px;
+}
+.institution .institution-container .institution-right p {
+  font-size: 1.6rem;
+}
+.institution .institution-container .institution-right .institution-btn {
+  margin-top: 20px;
+  padding: 15px 26px;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #4f86f9;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* ------------------------- /heroAbout-style ------------------------- */
@@ -1771,6 +1892,15 @@ a {
   .home_hero .homeHero-container .hero-item-2 .hero-img-2 .hero-info p {
     font-size: 1.6rem;
   }
+  .institution .institution-container {
+    max-width: 1320px;
+    margin: auto;
+    padding: 0 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .institution .institution-container .institution-left {
+    grid-row: 2/2;
+  }
   .Services .Services-title h2 {
     font-size: 3.2rem;
   }
@@ -1832,6 +1962,16 @@ a {
   .home_hero .homeHero-container .hero-item-2 .hero-img-2 .hero-info p {
     font-size: 1.6rem;
     width: 90%;
+  }
+  .institution .institution-container {
+    max-width: 1320px;
+    margin: auto;
+    padding: 0 30px;
+    padding: 0 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .institution .institution-container .institution-right h2 {
+    font-size: 3.5rem;
   }
   .team .team-title h2 {
     font-size: 3.5rem;
@@ -2062,6 +2202,26 @@ a {
     font-size: 1.4rem;
     width: 95%;
   }
+  .institution .institution-container {
+    max-width: 1320px;
+    margin: auto;
+    padding: 0 30px;
+    padding: 0 12px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .institution .institution-container .institution-right h2 {
+    font-size: 2.5rem;
+  }
+  .institution .institution-container .institution-right p {
+    font-size: 1.4rem;
+  }
+  .institution .institution-container .institution-right p:nth-child(3) {
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+  }
+  .institution .institution-container .institution-left {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .team .team-title h2 {
     font-size: 2.5rem;
   }
@@ -2170,7 +2330,6 @@ a {
   }
   .studies .studies-container {
     padding: 0 12px;
-    padding-top: 50px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 320px 320px;
   }
@@ -2382,6 +2541,50 @@ a {
   }
   .home_hero .homeHero-container .hero-item-2 .hero-img-2 .hero-info .hero-btn {
     font-size: 1.2rem;
+  }
+  .institution .institution-container {
+    max-width: 1320px;
+    margin: auto;
+    padding: 0 30px;
+    padding: 0 12px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .institution .institution-container .institution-right h2 {
+    font-size: 2rem;
+  }
+  .institution .institution-container .institution-right h3 {
+    font-size: 1.2rem;
+  }
+  .institution .institution-container .institution-right p {
+    font-size: 1.2rem;
+  }
+  .institution .institution-container .institution-right p:nth-child(3) {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+  }
+  .institution .institution-container .institution-right .institution-btn {
+    font-size: 1.2rem;
+  }
+  .institution .institution-container .institution-left {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .institution .institution-container .institution-left .institution-items:nth-child(1) {
+    padding: 30px 20px;
+  }
+  .institution .institution-container .institution-left .institution-items:nth-child(1) .institution-info h3 {
+    font-size: 1.6rem;
+  }
+  .institution .institution-container .institution-left .institution-items:nth-child(1) .institution-info p {
+    font-size: 1.4rem;
+  }
+  .institution .institution-container .institution-left .institution-items {
+    padding: 30px 20px;
+  }
+  .institution .institution-container .institution-left .institution-items .institution-info h3 {
+    font-size: 1.6rem;
+  }
+  .institution .institution-container .institution-left .institution-items .institution-info p {
+    font-size: 1.4rem;
   }
   .team .team-title h2 {
     font-size: 2.5rem;

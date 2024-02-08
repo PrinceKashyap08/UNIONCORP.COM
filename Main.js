@@ -1,3 +1,4 @@
+AOS.init();
 // Pre Loader  
 const preloader = document.getElementById("loader");
 
@@ -22,7 +23,7 @@ const year = document.querySelector(".currentYear")
 year.innerHTML = new Date().getFullYear();
 
 
-$('.owl-carousel').owlCarousel({
+$('#hero .owl-carousel').owlCarousel({
     loop: true,
     margin: 0,
     nav: false,
@@ -40,6 +41,26 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+$('#testimonial .owl-carousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: false,
+    dots: true,
+    autoplay: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+});
+
 
 
 

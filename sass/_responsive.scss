@@ -103,6 +103,16 @@
         }
     }
 
+    .institution {
+        .institution-container {
+            @include max-width;
+            grid-template-columns: repeat(1, 1fr);
+            .institution-left{
+                grid-row: 2/2;
+            }
+        }
+    }
+
     .Services{
         .Services-title{
             h2{
@@ -141,7 +151,6 @@
     .footer {
         .footer-top {
             height: auto;
-
             .footer-top-wrapper {
                 padding: 100px 30px;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -201,6 +210,20 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .institution {
+        .institution-container{
+            @include max-width;
+            padding: 0 20px;
+            grid-template-columns: repeat(1, 1fr);
+            .institution-right{
+                h2{
+                    font-size: 3.5rem;
+                }
+              
             }
         }
     }
@@ -557,6 +580,29 @@
         }
     }
 
+    .institution {
+        .institution-container{
+            @include max-width;
+            padding: 0 12px;
+            grid-template-columns: repeat(1, 1fr);
+            .institution-right{
+                h2{
+                    font-size: 2.5rem;
+                }
+                p{
+                    font-size: 1.4rem;
+                }
+                p:nth-child(3){
+                    font-size: 1.4rem;
+                    padding-bottom: 10px;
+                }
+            }
+            .institution-left{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    }
+
     .team{
         .team-title{
             h2{
@@ -713,7 +759,6 @@
         }
         .studies-container{
             padding: 0 12px;
-            padding-top: 50px;
             grid-template-columns: repeat(1,1fr);
             grid-template-rows: 320px 320px;
         }
@@ -1067,6 +1112,57 @@
                         }
                         .hero-btn{
                             font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .institution {
+        .institution-container{
+            @include max-width;
+            padding: 0 12px;
+            grid-template-columns: repeat(1, 1fr);
+            .institution-right{
+                h2{
+                    font-size: 2rem;
+                }
+                h3{
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+                p:nth-child(3){
+                    font-size: 1.2rem;
+                    padding-bottom: 10px;
+                }
+                .institution-btn{
+                    font-size: 1.2rem;
+                }
+            }
+            .institution-left{
+                grid-template-columns: repeat(1,1fr);
+                .institution-items:nth-child(1){
+                    padding: 30px 20px;
+                    .institution-info{
+                        h3{
+                            font-size: 1.6rem;
+                        }
+                        p{
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+                .institution-items{
+                    padding: 30px 20px;
+                    .institution-info{
+                        h3{
+                            font-size: 1.6rem;
+                        }
+                        p{
+                            font-size: 1.4rem;
                         }
                     }
                 }

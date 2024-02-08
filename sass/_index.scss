@@ -59,12 +59,13 @@
             align-items: center;
             height: 100%;
 
-            .logo a{
+            .logo a {
                 font-size: 2.7rem;
                 font-weight: 700;
                 color: #000;
                 text-transform: uppercase;
-                span{
+
+                span {
                     color: #4f86f9;
                 }
             }
@@ -84,10 +85,12 @@
                     }
                 }
             }
-            .hamburger{
+
+            .hamburger {
                 cursor: pointer;
                 display: none;
-                .line{
+
+                .line {
                     width: 35px;
                     height: 3px;
                     margin: 7px;
@@ -100,21 +103,28 @@
 
 /* ------------------------- /header-style ------------------------- */
 
+.home-top{
+    padding-bottom: 120px;
+}
+
 /* ------------------------- hero-style ------------------------- */
-.home_hero{
+.home_hero {
     position: relative;
     height: 700px;
     padding-bottom: 100px;
-    .homeHero-container{
+
+    .homeHero-container {
         width: 100%;
         height: 500px;
-        .hero-item{
-            .hero-img{
+
+        .hero-item {
+            .hero-img {
                 position: relative;
                 background-image: url(/image/bg_1.jpg);
                 background-position: 70% center;
                 height: 700px;
-                &::after{
+
+                &::after {
                     position: absolute;
                     content: '';
                     top: 0;
@@ -127,7 +137,8 @@
                     height: 700px;
                     z-index: 1000;
                 }
-                .hero-info{
+
+                .hero-info {
                     @include max-width2;
                     position: relative;
                     top: 30%;
@@ -135,7 +146,8 @@
                     height: 700px;
                     text-align: center;
                     z-index: 10000;
-                    h1{
+
+                    h1 {
                         font-size: 6rem;
                         font-weight: 400;
                         color: $white;
@@ -143,7 +155,8 @@
                         width: 60%;
                         margin: auto;
                     }
-                    .heading{
+
+                    .heading {
                         font-size: 6rem;
                         font-weight: 400;
                         color: $white;
@@ -151,7 +164,8 @@
                         width: 70%;
                         margin: auto;
                     }
-                    p{
+
+                    p {
                         padding-top: 20px;
                         font-size: 1.6rem;
                         color: #fffffffc;
@@ -159,7 +173,8 @@
                         margin: auto;
                         padding-bottom: 20px;
                     }
-                    .hero-btn{
+
+                    .hero-btn {
                         padding: 16px 28px;
                         border: none;
                         font-size: 1.4rem;
@@ -168,22 +183,26 @@
                         text-transform: uppercase;
                         background-color: $white;
                         cursor: pointer;
-                        border-radius:5px;
-                        i{
+                        border-radius: 5px;
+
+                        i {
                             margin-left: 10px;
                         }
                     }
                 }
             }
         }
-        .hero-item-2{
+
+        .hero-item-2 {
             background-color: #4f86f9;
-            .hero-img-2{
+
+            .hero-img-2 {
                 position: relative;
                 background-image: url(/image/bg_2.jpg);
                 background-position: center;
                 height: 700px;
-                &::after{
+
+                &::after {
                     position: absolute;
                     content: '';
                     top: 0;
@@ -196,7 +215,8 @@
                     height: 700px;
                     z-index: 1000;
                 }
-                .hero-info{
+
+                .hero-info {
                     @include max-width2;
                     position: relative;
                     top: 30%;
@@ -204,7 +224,8 @@
                     height: 700px;
                     text-align: center;
                     z-index: 10000;
-                    h1{
+
+                    h1 {
                         font-size: 6rem;
                         font-weight: 400;
                         color: $white;
@@ -212,7 +233,8 @@
                         width: 60%;
                         margin: auto;
                     }
-                    .heading{
+
+                    .heading {
                         font-size: 6rem;
                         font-weight: 400;
                         color: $white;
@@ -220,7 +242,8 @@
                         width: 70%;
                         margin: auto;
                     }
-                    p{
+
+                    p {
                         padding-top: 20px;
                         font-size: 1.6rem;
                         color: #fffffffc;
@@ -228,7 +251,8 @@
                         margin: auto;
                         padding-bottom: 20px;
                     }
-                    .hero-btn{
+
+                    .hero-btn {
                         padding: 16px 28px;
                         border: none;
                         font-size: 1.4rem;
@@ -237,8 +261,9 @@
                         text-transform: uppercase;
                         background-color: $white;
                         cursor: pointer;
-                        border-radius:5px;
-                        i{
+                        border-radius: 5px;
+
+                        i {
                             margin-left: 10px;
                         }
                     }
@@ -247,11 +272,147 @@
         }
     }
 }
+
 /* ------------------------- /hero-style ------------------------- */
 
 /* ------------------------- heroAbout-style ------------------------- */
-.heroAbout{
+.institution {
     position: relative;
-    padding-top: 100px;
+    padding: 120px 0;
+    background-color: #f4f6ff;
+
+    .institution-container {
+        @include max-width;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 50px;
+
+        .institution-left {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            .institution-items:nth-child(1) {
+                padding-top: 20px;
+                padding: 40px;
+                background-color: $Primary;
+                transition: all 0.5s ease;
+                border-radius: 10px;
+                .institution-icons {
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #e3ecfe;
+                    border-radius: 50%;
+
+                    img {
+                        width: 30px;
+                    }
+                }
+
+                .institution-info {
+                    h3 {
+                        padding-top: 15px;
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        color: $white;
+                    }
+
+                    p {
+                        padding-top: 15px;
+                        font-size: 1.5rem;
+                        color: #fffffffc;
+                    }
+                }
+            }
+            .institution-items {
+                padding-top: 20px;
+                padding: 40px;
+                background-color: #fff;
+                transition: all 0.5s ease;
+                border-radius: 10px;
+
+
+                &:hover {
+                    background-color: $Primary;
+
+                    .institution-info {
+                        h3 {
+                            color: $white;
+                        }
+
+                        p {
+                            color: $white;
+                        }
+                    }
+                }
+
+                .institution-icons {
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #e3ecfe;
+                    border-radius: 50%;
+
+                    img {
+                        width: 30px;
+                    }
+                }
+
+                .institution-info {
+                    h3 {
+                        padding-top: 15px;
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                        color: #000000cc;
+                    }
+
+                    p {
+                        padding-top: 15px;
+                        font-size: 1.5rem;
+                        color: #8c8c8c;
+                    }
+                }
+            }
+        }
+
+        .institution-right {
+            h3 {
+                font-size: 1.4rem;
+                font-weight: 400;
+                color: #8c8c8c;
+                padding-bottom: 10px;
+            }
+
+            h2 {
+                font-size: 3.8rem;
+                font-weight: 500;
+                color: #000;
+                padding-bottom: 10px;
+            }
+
+            p {
+                font-size: 1.6rem;
+            }
+
+            .institution-btn {
+                margin-top: 20px;
+                padding: 15px 26px;
+                border: none;
+                font-size: 1.4rem;
+                font-weight: 600;
+                color: $white;
+                background-color: $Primary;
+                border-radius:5px;
+                cursor: pointer;
+            }
+        }
+    }
 }
+
 /* ------------------------- /heroAbout-style ------------------------- */

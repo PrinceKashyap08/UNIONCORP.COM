@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/dist/css/main.css">
     <title>Unioncorp.in</title>
 </head>
 
-<body>
+<body onload="myLoder()">
+    <div id="loader">
+        <img src="/image/Spinner-5.gif" alt="spinner">
+    </div>
     <!-- ----------------- header_section ------------------ -->
     <header class="header">
         <div class="header_top_wrapper">
@@ -65,7 +64,7 @@
     <!-- ----------------- main_section ------------------ -->
     <main>
         <!-- ----------------- hero_section ------------------ -->
-        <section class="home_hero">
+        <section class="home_hero" id="hero">
             <div class="homeHero-container">
                 <div class="owl-carousel owl-theme">
                     <div class="hero-item">
@@ -95,11 +94,537 @@
         </section>
         <!-- ----------------- /hero_section ------------------ -->
 
-        <!-- ----------------- homeAbout_section ------------------ -->
-        <section class="heroAbout">
+        <!-- ----------------- institution_section ------------------ -->
+        <section class="institution">
+            <div class="institution-container">
+                <div class="institution-left" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1000">
+                    <div class="institution-items">
+                        <div class="institution-icons">
+                            <img src="/image/accounting (1).png" alt="about-image">
+                        </div>
+                        <div class="institution-info">
+                            <h3>Professional Consultants</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                    <div class="institution-items">
+                        <div class="institution-icons">
+                            <img src="/image/financial (1).png" alt="about-image">
+                        </div>
+                        <div class="institution-info">
+                            <h3>Comprehensive Services</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                    <div class="institution-items">
+                        <div class="institution-icons">
+                            <img src="/image/recession.png" alt="about-image">
+                        </div>
+                        <div class="institution-info">
+                            <h3>A Culture that Delivers</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                    <div class="institution-items">
+                        <div class="institution-icons">
+                            <img src="/image/technology.png" alt="about-image">
+                        </div>
+                        <div class="institution-info">
+                            <h3>Industry Experience</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="institution-right" data-aos="fade-up" data-aos-delay="30" data-aos-duration="2000">
+                    <h3>ABOUT UNION CORPORATION</h3>
+                    <h2>More than 40M+ Trusted Our Financial & Conusultation Institution</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean.</p>
 
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
+                        is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+
+                    <button class="institution-btn">LEARN MORE</button>    
+                </div>
+            </div>
         </section>
-        <!-- ----------------- /homeAbout_section ------------------ -->
+        <!-- ----------------- /institution_section ------------------ -->
+
+        <!-- ----------------- Customers_section ------------------ -->
+        <section class="customer">
+            <div class="customer-container">
+                <div class="customer-items"></div>
+                <div class="customer-items" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1200">
+                    <h3>ABOUT UNION CORPORATION</h3>
+                    <h2>Quality Makes the Belief for Customers</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean.</p>
+                    <div class="customer-button">
+                        <ul>
+                            <li><i class="fa fa-play"></i></li>
+                        </ul>
+                        <p>Watch Video</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------- /Customers_section ------------------ -->
+
+        <!-- ----------------- Services_section ------------------ -->
+        <section class="Services">
+            <div class="Services-title" data-aos="fade-up" data-aos-delay="10" data-aos-duration="800">
+                <h3>SERVICES</h3>
+                <h2>Our Exclusive Services We <br> Offer For You</h2>
+            </div>
+            <div class="Services-container">
+                <div class="service-items" data-aos="fade-up" data-aos-delay="10" data-aos-duration="1000">
+                    <div class="services-icons">
+                        <img src="/image/accounting (1).png" alt="accounting-image">
+                    </div>
+                    <div class="services-info">
+                        <h3>Financial Planning</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                </div>
+                <div class="service-items" data-aos="fade-up" data-aos-delay="10" data-aos-duration="1000">
+                    <div class="services-icons">
+                        <img src="/image/financial (1).png" alt="accounting-image">
+                    </div>
+                    <div class="services-info">
+                        <h3>Investments Management</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                </div>
+                <div class="service-items" data-aos="fade-up" data-aos-delay="10" data-aos-duration="1000">
+                    <div class="services-icons">
+                        <img src="/image/taxes.png" alt="Taxes-image">
+                    </div>
+                    <div class="services-info">
+                        <h3>Taxes Consulting</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                </div>
+                <div class="service-items" data-aos="fade-up" data-aos-delay="10" data-aos-duration="1000">
+                    <div class="services-icons">
+                        <img src="/image/insurance.png" alt="insurance-image">
+                    </div>
+                    <div class="services-info">
+                        <h3>Insurance Consulting</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                </div>
+                <div class="service-items" data-aos="fade-up" data-aos-delay="20" data-aos-duration="2000">
+                    <div class="services-icons">
+                        <img src="/image/retirement-plan.png" alt="insurance-image">
+                    </div>
+                    <div class="services-info">
+                        <h3>Retirement Planning</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                </div>
+                <div class="service-items" data-aos="fade-up" data-aos-delay="20" data-aos-duration="2000">
+                    <div class="services-icons">
+                        <img src="/image/risk.png" alt="risk-image">
+                    </div>
+                    <div class="services-info">
+                        <h3>Risk Management</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                </div>
+                <div class="service-items" data-aos="fade-up" data-aos-delay="20" data-aos-duration="2000">
+                    <div class="services-icons">
+                        <img src="/image/technology.png" alt="teachnolgy-image">
+                    </div>
+                    <div class="services-info">
+                        <h3>Technology Consulting</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                </div>
+                <div class="service-items" data-aos="fade-up" data-aos-delay="20" data-aos-duration="2000">
+                    <div class="services-icons">
+                        <img src="/image/accounting (1).png" alt="teachnolgy-image">
+                    </div>
+                    <div class="services-info">
+                        <h3>Business Loan</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------- /servies_section ------------------ -->
+
+         <!-- ----------------- Studies_section ------------------ -->
+         <section class="studies home-top">
+            <div class="studies-title" data-aos="fade-up" data-aos-delay="10" data-aos-duration="800">
+                <h3>CASE STUDIES</h3>
+                <h2>We Take Every Case <br> Studies Very Seriously</h2>
+            </div>
+            <div class="studies-container">
+                <div class="studies-items">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease">
+                        <img src="/image/image_2.jpg" alt="studies image">
+                        <div class="studies-overlay">
+                            <div class="studies-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div class="studies-paragraph">
+                                <p>Business Finance <br> Consulting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="studies-items">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease">
+                        <img src="/image/gallery-1.jpg" alt="studies image">
+                        <div class="studies-overlay">
+                            <div class="studies-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div class="studies-paragraph">
+                                <p>Business Finance <br> Consulting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="studies-items">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease">
+                        <img src="/image/gallery-3.jpg" alt="studies image">
+                        <div class="studies-overlay">
+                            <div class="studies-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div class="studies-paragraph">
+                                <p>Business Finance <br> Consulting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="studies-items">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1000" data-aos-easing="ease">
+                        <img src="/image/gallery-4.jpg" alt="studies image">
+                        <div class="studies-overlay">
+                            <div class="studies-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div class="studies-paragraph">
+                                <p>Business Finance <br> Consulting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="studies-items">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="40" data-aos-duration="1200" data-aos-easing="ease">
+                        <img src="/image/gallery-5.jpg" alt="studies image">
+                        <div class="studies-overlay">
+                            <div class="studies-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div class="studies-paragraph">
+                                <p>Business Finance <br> Consulting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="studies-items">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="40" data-aos-duration="1200" data-aos-easing="ease">
+                        <img src="/image/gallery-6.jpg" alt="studies image">
+                        <div class="studies-overlay">
+                            <div class="studies-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div class="studies-paragraph">
+                                <p>Business Finance <br> Consulting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="studies-items">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="40" data-aos-duration="1200" data-aos-easing="ease">
+                        <img src="/image/gallery-7.jpg" alt="studies image">
+                        <div class="studies-overlay">
+                            <div class="studies-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div class="studies-paragraph">
+                                <p>Business Finance <br> Consulting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="studies-items">
+                    <div class="studies-img" data-aos="fade-up" data-aos-delay="40" data-aos-duration="1200" data-aos-easing="ease">
+                        <img src="/image/gallery-8.jpg" alt="studies image">
+                        <div class="studies-overlay">
+                            <div class="studies-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div class="studies-paragraph">
+                                <p>Business Finance <br> Consulting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------- /Studies_section ------------------ -->
+
+        <!-- ----------------- Statistics_section ------------------ -->
+        <section class="Statistics">
+            <div class="statistics-overlay"></div>
+            <div class="statistic-title" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1200">
+                <h3>GREAT REVIEWS FOR OUR SERVICES</h3>
+                <h2>Technical Statistics</h2>
+            </div>
+            <div class="statistic-container">
+                <div class="stactistic-items" data-aos="fade-up" data-aos-delay="20" data-aos-duration="2000">
+                    <span>60</span>
+                    <p>YEAR OF EXPERIENCED</p>
+                </div>
+                <div class="stactistic-items" data-aos="fade-up" data-aos-delay="20" data-aos-duration="2000">
+                    <span>92,200</span>
+                    <p>SATISFIED CUSTOMERS</p>
+                </div>
+                <div class="stactistic-items" data-aos="fade-up" data-aos-delay="20" data-aos-duration="2000">
+                    <span>5,800</span>
+                    <p>PROJECT COMPLETED</p>
+                </div>
+                <div class="stactistic-items" data-aos="fade-up" data-aos-delay="20" data-aos-duration="2000">
+                    <span>100</span>
+                    <p>GET AWARDS</p>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------- /Statistics_section ------------------ -->
+
+        <!-- ----------------- Team_section ------------------ -->
+        <section class="team">
+            <div class="team-title" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1000">
+                <h3>MEET OUR BRILLIANT MINDS</h3>
+                <h2>Our Leadership Team</h2>
+            </div>
+            <div class="team-container">
+                <div class="team-items" data-aos="flip-left" data-aos-delay="50" data-aos-duration="12000">
+                    <div class="team-top-box">
+                        <div class="team-img">
+                            <img src="/image/staff-1.jpg" alt="team-image">
+
+                        </div>
+                    </div>
+                    <div class="team-bottom-box">
+                        <h3>Jason Smith</h3>
+                        <span>PRESIDENT & CEO</span>
+                        <ul>
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-google"></i></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                        </ul>
+                        <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                    </div>
+                </div>
+                <div class="team-items" data-aos="flip-left" data-aos-delay="50" data-aos-duration="12000">
+                    <div class="team-top-box">
+                        <div class="team-img">
+                            <img src="/image/staff-2.jpg" alt="team-image">
+
+                        </div>
+                    </div>
+                    <div class="team-bottom-box">
+                        <h3>Jason Smith</h3>
+                        <span>PRESIDENT & CEO</span>
+                        <ul>
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-google"></i></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                        </ul>
+                        <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                    </div>
+                </div>
+                <div class="team-items" data-aos="flip-left" data-aos-delay="50" data-aos-duration="12000">
+                    <div class="team-top-box">
+                        <div class="team-img">
+                            <img src="/image/staff-3.jpg" alt="team-image">
+
+                        </div>
+                    </div>
+                    <div class="team-bottom-box">
+                        <h3>Jason Smith</h3>
+                        <span>PRESIDENT & CEO</span>
+                        <ul>
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-google"></i></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                        </ul>
+                        <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                    </div>
+                </div>
+                <div class="team-items" data-aos="flip-left" data-aos-delay="50" data-aos-duration="12000">
+                    <div class="team-top-box">
+                        <div class="team-img">
+                            <img src="/image/staff-4.jpg" alt="team-image">
+
+                        </div>
+                    </div>
+                    <div class="team-bottom-box">
+                        <h3>Jason Smith</h3>
+                        <span>PRESIDENT & CEO</span>
+                        <ul>
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-google"></i></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                        </ul>
+                        <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                    </div>
+                </div>
+                <div class="team-items" data-aos="flip-left" data-aos-delay="50" data-aos-duration="12000">
+                    <div class="team-top-box">
+                        <div class="team-img">
+                            <img src="/image/staff-5.jpg" alt="team-image">
+
+                        </div>
+                    </div>
+                    <div class="team-bottom-box">
+                        <h3>Jason Smith</h3>
+                        <span>PRESIDENT & CEO</span>
+                        <ul>
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-google"></i></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                        </ul>
+                        <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                    </div>
+                </div>
+                <div class="team-items" data-aos="flip-left" data-aos-delay="50" data-aos-duration="12000">
+                    <div class="team-top-box">
+                        <div class="team-img">
+                            <img src="/image/staff-6.jpg" alt="team-image">
+
+                        </div>
+                    </div>
+                    <div class="team-bottom-box">
+                        <h3>Jason Smith</h3>
+                        <span>PRESIDENT & CEO</span>
+                        <ul>
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-google"></i></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                        </ul>
+                        <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                    </div>
+                </div>
+                <div class="team-items" data-aos="flip-left" data-aos-delay="50" data-aos-duration="12000">
+                    <div class="team-top-box">
+                        <div class="team-img">
+                            <img src="/image/staff-7.jpg" alt="team-image">
+
+                        </div>
+                    </div>
+                    <div class="team-bottom-box">
+                        <h3>Jason Smith</h3>
+                        <span>PRESIDENT & CEO</span>
+                        <ul>
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-google"></i></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                        </ul>
+                        <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                    </div>
+                </div>
+                <div class="team-items" data-aos="flip-left" data-aos-delay="50" data-aos-duration="12000">
+                    <div class="team-top-box">
+                        <div class="team-img">
+                            <img src="/image/staff-8.jpg" alt="team-image">
+
+                        </div>
+                    </div>
+                    <div class="team-bottom-box">
+                        <h3>Jason Smith</h3>
+                        <span>PRESIDENT & CEO</span>
+                        <ul>
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-google"></i></li>
+                            <li><i class="fa fa-instagram"></i></li>
+                        </ul>
+                        <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------- /Team_section ------------------ -->
+
+        <!-- ----------------- Testimonial_section ------------------ -->
+        <section class="testimonial" id="testimonial">
+            <div class="testimonial-title" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1000">
+                <h3>TESTIMONIAL</h3>
+                <h2>Happy Customers</h2>
+            </div>
+            <div class="testimonial-container">
+                <div class="owl-carousel owl-theme">
+                    <div class="testimonial-items" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1200">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                        <div class="testimonial-info">
+                            <div class="testimonial-img">
+                                <img src="/image/person_1 (1).jpg" alt="testimonial-image">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4>Roger Scott</h4>
+                                <p>Marketing Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-items" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1200">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                        <div class="testimonial-info">
+                            <div class="testimonial-img">
+                                <img src="/image/person_2 (1).jpg" alt="testimonial-image">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4>Roger Scott</h4>
+                                <p>Marketing Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-items" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1200">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                        <div class="testimonial-info">
+                            <div class="testimonial-img">
+                                <img src="/image/person_3 (1).jpg" alt="testimonial-image">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4>Roger Scott</h4>
+                                <p>Marketing Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-items" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1200">
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.</p>
+                        <div class="testimonial-info">
+                            <div class="testimonial-img">
+                                <img src="/image/person_4 (1).jpg" alt="testimonial-image">
+                            </div>
+                            <div class="testimonial-content">
+                                <h4>Roger Scott</h4>
+                                <p>Marketing Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------- /Testimonial_section ------------------ -->
 
         <!-- ----------------- Prepare_section ------------------ -->
         <section class="Prepare">
@@ -207,14 +732,11 @@
         </div>
     </footer>
     <!-- ----------------- /footer_section ------------------ -->
-
+     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/edcd5c8c16.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="Main.js"></script>
 </body>
 
